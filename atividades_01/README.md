@@ -67,13 +67,7 @@
 2. Abra o projeto no **Visual Studio Code (VSCode)**.
 3. No terminal, execute o seguinte comando para instalar as dependências:
 
-<pre>
-    <code id="code">npm install</code>
-</pre>
-   ou
-<pre>
-   <code id="code">npm i</code>
-</pre>
+<pre><code id="code">npm install</code></pre> ou <pre><code id="code">npm i</code></pre>
 Sugestões de Instalação
 - **Extensão:** **`Code Runner`**. Esta extensão facilita a execução dos códigos.
 
