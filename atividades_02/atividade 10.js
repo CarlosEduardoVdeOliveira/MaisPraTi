@@ -1,20 +1,13 @@
-/*
-10. Criando Relatórios com Objetos e Arrays
-○ Objetivo: Crie um array de objetos vendas, onde cada objeto tem produto,
-quantidade e valor. Use forEach para calcular o valor total de vendas de
-todos os produtos.
-*/
-
-let vendas = [
-  {product: "Camisa do Batman", qt: 5, value: 55.99},
-  {product: "Short", qt: 15, value: 82.96},
-  {product: "Calça jeans", qt: 3, value: 150.0},
-  {product: "Jaqueta de couro", qt: 1, value: 231.5},
-  {product: "Camiseta", qt: 24, value: 35.8},
-  {product: "Tênis Nike", qt: 2, value: 549.51},
+let sales = [
+  {product: "Camisa do Batman", amount: 5, value: 55.99},
+  {product: "Short", amount: 15, value: 82.96},
+  {product: "Calça jeans", amount: 3, value: 150.0},
+  {product: "Jaqueta de couro", amount: 1, value: 231.5},
+  {product: "Camiseta", amount: 24, value: 35.8},
+  {product: "Tênis Nike", amount: 2, value: 549.51},
 ]
-let total = 0
-vendas.forEach(venda => {
-  total += venda.qt * venda.value;
-  console.log(`Produto: ${venda.product}, total de vendas por produto: ${total.toFixed(2)}`);
+let totalValue = 0
+sales.forEach(sale => {
+  totalValue += sale.amount * sale.value;
+  console.log(`Produto: ${sale.product}, total de vendas por produto: ${total.toFixed(2)}`);
 })
