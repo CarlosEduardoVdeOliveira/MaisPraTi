@@ -21,7 +21,7 @@
 
 6. **Verificação de Triângulo**  
    Ler três valores para os lados de um triângulo: A, B e C. Verificar se os lados fornecidos formam um triângulo e indicar se é isósceles, escaleno ou equilátero.
-   - **Para verificar se os lados fornecidos formam um triângulo**: (A &lt B + C e B &lt A + C e C &lt A + B)
+   - **Para verificar se os lados fornecidos formam um triângulo**: (A < B + C e B < A + C e C < A + B)
    - **Triângulo Isósceles**: possui dois lados iguais (A=B ou A=C ou B=C).  
    - **Triângulo Escaleno**: possui todos os lados diferentes (A≠B e B≠C).  
    - **Triângulo Equilátero**: possui todos os lados iguais (A=B e B=C).
