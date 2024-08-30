@@ -1,9 +1,6 @@
 const prompt = require("prompt-sync")()
-/*
-3. Implemente um programa que recebe uma nota de 0 a 10 e classifica como
-"Aprovado", "Recuperação", ou "Reprovado" utilizando if-else if. 
-*/
 const grade = Number(prompt("Digite a nota do aluno: "));
+
 const checkStudentGradeStatus = (grade) => {
   if (grade < 0 || grade > 10) {
     return "Nota inválida. Insira uma nota entre 0 e 10."
@@ -16,6 +13,7 @@ const checkStudentGradeStatus = (grade) => {
     return `Sua nota é: ${grade}, status: Reprovado`;
   }
 }
+
 if (isNaN(grade)) {
   console.error("Por favor, insira uma nota valida.");
 }else{

@@ -69,8 +69,10 @@
 
 <pre>
     <code id="code">npm install</code>
-    ou
-    <code id="code">npm i</code>
+</pre>
+   ou
+<pre>
+   <code id="code">npm i</code>
 </pre>
 Sugestões de Instalação
 - **Extensão:** **`Code Runner`**. Esta extensão facilita a execução dos códigos.

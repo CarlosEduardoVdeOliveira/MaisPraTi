@@ -1,8 +1,5 @@
-const prompt = require("prompt-sync")()
-/*
-11. Escreva um programa que solicita ao usuário 5 números e calcula a soma
-total utilizando um loop for.
-*/
+const prompt = require("prompt-sync")();
+
 function requestNumbers(){
   let numbers = [];
   let numberOfTimesToLoop = 5;
@@ -15,6 +12,7 @@ function requestNumbers(){
   }
   return (numbers);
 }
+
 function sumNumber(){
   let arrNumbers = requestNumbers();
   let sum = 0;
@@ -23,4 +21,5 @@ function sumNumber(){
   }
   return sum;
 }
+
 console.log(`A soma dos números é: ${sumNumber()}`);

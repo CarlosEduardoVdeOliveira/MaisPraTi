@@ -1,9 +1,5 @@
-const prompt = require("prompt-sync")()
-/*
-4. Crie um menu interativo no console que oferece ao usuário a escolha de 
-três opções. Utilize switch-case para implementar a lógica de cada opção 
-selecionada. 
-*/
+const prompt = require("prompt-sync")();
+
 function showMenu() {
   console.log("********** MENU **********");
   console.log("        Pagina home: 1");
@@ -12,10 +8,12 @@ function showMenu() {
   console.log("           Sair: 0");
   console.log("**************************");
 }
+
 let exit = false;
+
 function menu(){
   while(!exit){
-    showMenu()
+    showMenu();
     const select = Number(prompt("Escolha um numero de 0 a 3 do menu: "))
     switch (select) {
       case 1:
@@ -37,4 +35,4 @@ function menu(){
     }
   }
 }
-menu()
+menu();
