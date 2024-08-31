@@ -1,7 +1,16 @@
-/*
-13. Implementando um Carrinho de Compras
-○ Objetivo: Crie um objeto carrinho com uma propriedade itens, que é um
-array de objetos. Cada objeto dentro de itens deve representar um
-produto no carrinho, com nome, quantidade, e precoUnitario. Use forEach
-para calcular o valor total do carrinho.
-*/
+let cart = () => {
+  let shoppingCart = {
+    items:[
+      {name: "Vara de Pesca", quantity: 2, unitPrice: 113.98},
+      {name: "Molinete", quantity: 2, unitPrice: 556.68},
+      {name: "Isca Artificial", quantity: 6, unitPrice: 59.99}
+    ]
+  }
+  let total = 0;
+  shoppingCart.items.forEach(item =>{
+    total += item.quantity * item.unitPrice
+  })
+  return total;
+}
+let totalCart = cart();
+console.log(`Total a pagar: R$ ${totalCart.toFixed(2)}`);

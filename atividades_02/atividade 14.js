@@ -17,9 +17,10 @@ function getDepartment() {
   for (const index in enterprise) {
     for (const department of enterprise[index]) {
       for (const i in department) {
-        if(typeof(department[i]) === "object") console.log(department[i]);
+        if(typeof(department[i]) === "object") console.log(department[i].join(', '));
+        if(typeof(department[i]) !== "object") console.log(department[i]);
       }
-    }
+    }    
   }
 
 }
