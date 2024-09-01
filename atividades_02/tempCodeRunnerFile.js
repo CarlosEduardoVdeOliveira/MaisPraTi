@@ -1,1 +1,1 @@
-return newStock; 
+.customer

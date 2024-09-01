@@ -1,10 +1,22 @@
-/*
-3. Filtrando Propriedades de Objetos
-○ Objetivo: Dado um objeto produto com várias propriedades, crie uma
-função que retorna um novo objeto contendo apenas as propriedades cujo
-valor seja maior que um valor específico. Use for in para filtrar as
-propriedades.
-*/
+let product = {
+  price: 150,
+  weight: 50,
+  height: 30,
+  width: 20,
+  quantity: 10
+};
 
+let filterProperties = (product, value) => {
+  let newProducts = {};
+  for (const property in product) {
+    if (product[property] > value) {
+      newProducts[property] = product[property];
+    }
+  }
+  return newProducts;
+};
+
+let filter = filterProperties(product, 30);
+console.log(filter);
 
 

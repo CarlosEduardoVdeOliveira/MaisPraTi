@@ -5,6 +5,10 @@ let movies = [
   {title: "O Poço", director: "Galder Gaztelu-Urrutia", yearOfRelease: 2020},
   {title: "Carros", director: "John Lasseter", yearOfRelease: 2006},
 ]
-let movieTitles = [];
-movies.forEach(movieTitle => movieTitles.push(movieTitle.title));
-console.log(movieTitles);
+let getTitleMovie = (movies) => {
+  let movieTitles = [];
+  movies.forEach(movieTitle => movieTitles.push(movieTitle.title));
+  return (movieTitles);
+}
+let moviesTitles = getTitleMovie(movies);
+console.log("Títulos dos filmes: ", moviesTitles);

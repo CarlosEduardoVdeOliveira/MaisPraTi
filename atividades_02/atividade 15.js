@@ -5,9 +5,13 @@ let transactions = [
   {type: "Entrada", value: 10_500.6},
   {type: "Saída", value: 1_500.5},
 ];
-let balance = 0;
-transactions.forEach(transaction => {
-  if (transaction.type === "Saída") balance -= transaction.value;
-  if(transaction.type === "Entrada") balance += transaction.value;
-})
+let getBalance = (transactions) => {
+  let balance = 0;
+  transactions.forEach(transaction => {
+    if (transaction.type === "Saída") balance -= transaction.value;
+    if(transaction.type === "Entrada") balance += transaction.value;
+  })
+  return balance;
+}
+let balance = getBalance(transactions);
 console.log(`Seu saldo final é: R$ ${balance.toFixed(2)}.`);

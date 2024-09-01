@@ -6,8 +6,11 @@ let sales = [
   {product: "Camiseta", amount: 24, value: 35.8},
   {product: "Tênis Nike", amount: 2, value: 549.51},
 ]
-let totalValue = 0
-sales.forEach(sale => {
-  totalValue += sale.amount * sale.value;
-  console.log(`Produto: ${sale.product}, total de vendas por produto: ${total.toFixed(2)}`);
-})
+let messageTotalPerProduct = (sales) => {
+  let total = 0
+  sales.forEach(sale => {
+    total += sale.amount * sale.value;
+    return console.log(`Produto: ${sale.product}, total de vendas por produto: ${total.toFixed(2)}`);
+  });
+}
+messageTotalPerProduct(sales)
