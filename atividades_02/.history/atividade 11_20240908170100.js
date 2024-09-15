@@ -1,3 +1,9 @@
+/* 
+11. Agrupando Elementos com forEach
+○ Objetivo: Crie um array de objetos pedidos, onde cada pedido tem
+cliente, produto, e quantidade. Use forEach para criar um objeto que
+agrupa a quantidade total de produtos por cliente.
+*/
 let orders = [
   {customer: "Jaques", product: "livro", numberOfOrders: 2},
   {customer: "Edu", product: "Lapis de colori", numberOfOrders: 3},
@@ -7,16 +13,12 @@ let orders = [
   {customer: "Hyago", product: "Lapiseira", numberOfOrders: 2},
 ]
 
+let newOrders = {}
 let filterOrdersPerPerson = (orders) => {
-  let totalProductsByCustomer = {}
-  orders.forEach(order => {
-    if (totalProductsByCustomer[order.customer]) {
-      totalProductsByCustomer[order.customer] += order.numberOfOrders;
-    } else {
-      totalProductsByCustomer[order.customer] = order.numberOfOrders;
-    }
+  orders.forEach((order) => {
+
   });
-  return totalProductsByCustomer;
+  return newOrders;
 };
 
 let orderPerson = filterOrdersPerPerson(orders);

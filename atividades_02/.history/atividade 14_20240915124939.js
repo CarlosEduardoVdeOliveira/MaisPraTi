@@ -9,6 +9,7 @@ let enterprise = {
 
 function getDepartment() {
   for (const department of enterprise.departments) {
+
     for (const employee of department.listOfEmployees) {
       console.log(`${employee} do departamento de: ${department.departmentName}`);
     }

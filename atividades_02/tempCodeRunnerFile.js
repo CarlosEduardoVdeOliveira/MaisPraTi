@@ -1,1 +1,1 @@
-.customer
+console.log
