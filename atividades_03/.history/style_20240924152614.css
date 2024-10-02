@@ -1,0 +1,136 @@
+/* Definindo a fonte e estilização básica */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header estilizado */
+header {
+  background-color: #16a55e;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header .logo h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('https://via.placeholder.com/1200x500');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn-donate {
+  background-color: #f41009;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-donate:hover {
+  background-color: #e66325;
+}
+
+/* Seções sobre e como ajudar */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about, .how-to-help, .donate {
+  background-color: white;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.how-to-help .help-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.help-option {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  flex: 1 1 calc(33% - 40px);
+  max-width: calc(33% - 40px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.help-option h3 {
+  color: #16a55e;
+}
+
+/* Doação */
+.donate {
+  background-color: #16a55e;
+  color: white;
+}
+
+.donate p {
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  background-color: #1b022a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}

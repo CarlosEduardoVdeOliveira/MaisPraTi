@@ -1,0 +1,131 @@
+/* Estilo básico */
+:root {
+  --green-50: #EDFAF5, 
+  --green-100: #DAF2E8, 
+  --green-200: #A8E0C6, 
+  --green-300: #7ACCA2, 
+  --green-400: #32A65C, 
+  --green-500: #008020,
+  --green-600: #00731B, 
+  --green-700: #005E14, 
+  --green-800: #004D0F, 
+  --green-900: #00380A, 
+  --green-950: #002406
+}
+'carrot-orange': {
+  '--orange-50': '#FFFCF5', 
+  '--orange-100': '#FCF7E8', 
+  '--orange-200': '#FAECC8', 
+  '--orange-300': '#F7DCA6', 
+  '--orange-400': '#F2BB68', 
+  '--orange-500': '#ee932b', 
+  '--orange-600': '#D67C22', 
+  '--orange-700': '#B36017', 
+  '--orange-800': '#8F4710', 
+  '--orange-900': '#6B2E09', 
+  '--orange-950': '#451A03'
+}
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #16a55e; /* Verde para transmitir esperança */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #e66325; /* Laranja ao passar o mouse */
+}
+
+/* Main Layout */
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.donation-info {
+  width: 70%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.donation-info img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #e66325;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #f88f5c;
+}
+
+aside.donation-links {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+aside ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside ul li a {
+  color: #727780;
+  text-decoration: none;
+}
+
+aside ul li a:hover {
+  color: #16a55e;
+}
+
+/* Footer */
+footer {
+  background-color: #5d5756;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

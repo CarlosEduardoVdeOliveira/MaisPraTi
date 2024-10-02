@@ -1,0 +1,6 @@
+
+.main__aside{
+  border: 1px solid var(--orange-800);
+  height: 100;
+  grid-row-start: 2;
+}

@@ -1,0 +1,4 @@
+.main__content{
+  border: 1px solid var(--green-800);
+  grid-row-start: 2;
+}

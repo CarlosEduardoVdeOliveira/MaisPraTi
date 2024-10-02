@@ -1,0 +1,14 @@
+.main__aside{
+  border: 1px solid var(--orange-300);
+  grid-row-start: 2;
+  margin-bottom: 32px;
+  border-radius: 10px;
+}
+
+.main__aside-title{}
+.main__aside--list{}
+.main__aside--list-item-image{
+  width: 100px;
+  
+}
+.main__aside--list-item{}

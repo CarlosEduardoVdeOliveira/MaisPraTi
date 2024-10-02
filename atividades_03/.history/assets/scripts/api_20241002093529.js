@@ -1,0 +1,10 @@
+/* 
+https://newsapi.org/s/google-news-br-api
+https://newsapi.org/v2/everything?q=keyword&apiKey=90b0a1e6642449088471333a43bcb4c2
+https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=90b0a1e6642449088471333a43bcb4c2
+ */
+/* 
+https://servicodados.ibge.gov.br/api/v3/noticias/?tipo=noticia
+http://servicodados.ibge.gov.br/api/v3/noticias/
+https://newsapi.org/v2/top-headlines?sources=google-news-br&apiKey=90b0a1e6642449088471333a43bcb4c2
+ */
