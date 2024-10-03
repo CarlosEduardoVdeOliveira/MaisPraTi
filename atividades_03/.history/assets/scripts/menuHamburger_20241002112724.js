@@ -1,1 +1,0 @@
-document.getElementById("menu_hamburger")
