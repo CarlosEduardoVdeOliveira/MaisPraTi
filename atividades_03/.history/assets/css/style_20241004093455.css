@@ -1,0 +1,104 @@
+@import url("./reset.css");
+@import url("./patterns.css");
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tektur:wght@400..900&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  justify-content: space-between;
+  background: url("../images/Website_StoreNavyBG.png") no-repeat center;
+  background-color: var(--color-blue-500);
+  font-family: 'Tektur', system-ui;
+  color: var(--color-blue-50);
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-blue-900);
+  justify-content: space-around;
+  height: var(--height-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.header__content-logo{
+  font-size: var(--size-2xl);
+  font-weight: var(--font-weight-bold);
+}
+.header__nav--container{}
+.header__nav--list-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+.header__nav--list-item{}
+.header__nav--list-link{
+  color: var(--color-yellow-500);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-fast);
+}
+.header__nav--list-link:hover{
+  box-shadow: var(--shadow-lg);
+}
+.active{
+  box-shadow: var(--shadow-lg);
+}
+.menu__hamburger{
+  background-color: transparent;
+  border: none;
+  font-size: var(--size-xl);
+  width: var(--width-sm);
+  color: var(--color-blue-50);
+  transition: var(--transition-medium);
+}
+
+.menu__hamburger:hover{
+  color: var(--color-blue-300);
+}
+
+
+.aside__content {
+  grid-area: aside;
+  /* background-color: var(--color-blue-50); */
+}
+
+.main__content {
+  grid-area: main;
+  /* background-color: var(--color-blue-50); */
+}
+
+.footer__content {
+  grid-area: footer;
+  background-color: var(--color-blue-900);
+}
+
+.aside__content, .main__content, .footer__content {
+  padding: 2rem 1rem;
+  
+}
+
+@media screen and (max-width: var(--breakpoint-sm)) {
+  .header__nav--container{
+    display: none;
+  }
+}
+
+/* Para telas médias como tablets */
+@media screen and (min-width: var(--breakpoint-md)) {
+  .header__nav--container{
+    display: none;
+  }
+}
+
+/* Para desktops grandes */
+@media screen and (min-width: var(--breakpoint-lg)) {
+  .header__nav--container{
+    display: block;
+  }
+}

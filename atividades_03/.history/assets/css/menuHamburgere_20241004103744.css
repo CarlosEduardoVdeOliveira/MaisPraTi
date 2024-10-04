@@ -1,0 +1,13 @@
+.menu__hamburger{
+  background-color: transparent;
+  border: none;
+  font-size: var(--size-xl);
+  width: var(--width-sm);
+  color: var(--color-blue-50);
+  transition: var(--transition-medium);
+}
+
+.menu__hamburger:hover{
+  color: var(--color-blue-300);
+}
+
