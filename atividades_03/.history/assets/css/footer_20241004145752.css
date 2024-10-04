@@ -1,0 +1,8 @@
+.footer__content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blue-500);
+  width: 100%;
+  font-family: ;
+}
