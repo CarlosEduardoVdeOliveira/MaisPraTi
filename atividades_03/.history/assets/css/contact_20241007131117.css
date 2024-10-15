@@ -1,0 +1,33 @@
+.body__contact{
+  background: var(--color-blue-500);
+}
+.main__contact{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  border: 1px solid #000;
+  width: 550px;
+  max-width: 550px;
+  min-width: 320px;
+  align-items: center;
+  
+}
+.main__contact h3{
+  font-size: var(--size-xl);
+  color: var(--color-yellow-500);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 4px;
+}
+.form_contact{
+  
+}
+.main__contact .group-input{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+  width: 100%;
+}
+.main__contact .group-input input{
+  width: 100%;
+}

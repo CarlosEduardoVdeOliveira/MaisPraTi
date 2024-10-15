@@ -1,0 +1,47 @@
+@import url("./reset.css");
+@import url("./patterns.css");
+@import url("./header.css");
+@import url("./menuHamburger.css");
+@import url("./banner.css");
+@import url("./aside.css");
+@import url("./mainContent.css");
+@import url("./footer.css");
+
+
+html, body {
+  height: 100dvh;
+}
+
+body {
+  font-family: var(--font-tektur);
+  background: var(--blue-50);
+  color: var(--blue-700);
+  background: url("../images/Website_StoreNavyBG.png") no-repeat center;
+  background-color: var(--color-blue-500);
+  color: var(--color-blue-50);
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+main{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  padding: var(--spacing-3xl) var(--spacing-4xl);
+}
+
+@media screen and (max-width: 320px) {}
+
+@media screen and (min-width: 768px) {
+  main{
+    grid-template-columns: 100%;
+    grid-template-rows: ;
+  }
+}
+
+@media screen and (min-width: 1024px) {}
+
+@media screen and (min-width: 1440px) {
+  body{
+    width: 100dvw;
+  }
+}

@@ -1,0 +1,36 @@
+.banner{
+  width: 100%;
+  grid-area: banner;
+  display: grid;
+  grid-template-areas:"p p s"
+                "p p s"
+                "p p t"
+                "p p t";
+  gap: 16px;
+}
+.banner a, .banner a img{
+  border-radius: 8px;
+}
+.banner a{
+  overflow: hidden;
+}
+.banner img{
+  border-radius: 8px;
+}
+.banner a#p{
+  grid-area: p;
+}
+.banner a#p img{
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.banner a#s{
+grid-area: s;
+}
+.banner a#t{
+grid-area: t;
+}
+.banner a:hover img{
+  transform: scale(1.5);
+}

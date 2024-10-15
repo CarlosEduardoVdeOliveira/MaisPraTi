@@ -1,0 +1,15 @@
+.body__contact{
+  background: var(--color-blue-500);
+}
+.main__contact{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  min-width: 500px;
+  align-items: center;
+  
+}
+.main__contact h3{
+  font-size: var(--size-xl);
+  
+}

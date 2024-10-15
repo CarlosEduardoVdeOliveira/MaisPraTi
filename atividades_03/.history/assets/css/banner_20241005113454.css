@@ -1,0 +1,11 @@
+.banner{
+  width: 100%;
+  border: 1px solid blueviolet;
+  grid-area: banner;
+  display: grid;
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 4fr 2fr;
+}
+.banner a:first-child{
+  grid: ;
+}

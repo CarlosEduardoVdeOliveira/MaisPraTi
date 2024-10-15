@@ -1,0 +1,69 @@
+.banner{
+  width: 100%;
+
+  grid-area: banner;
+  display: grid;
+  grid-template-areas:"news-01 news-01 news-02"
+                "news-01 news-01 news-02"
+                "news-01 news-01 news-03"
+                "news-01 news-01 news-03";
+  gap: 16px;
+}
+.banner a{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.content__link{
+  width: 100%;
+  background-color: rgba(0, 47, 149, 0.257);
+}
+.banner a, .banner a img{
+  border-radius: 8px;
+}
+.banner a .content__link img{
+  transition:var(--transition-slow);
+}
+.banner a#news-01{
+  grid-area: news-01;
+}
+.banner a#news-01 img{
+  height: 100%;
+  background-position: center;
+  object-fit: cover;
+}
+.banner a#news-02{
+grid-area: news-02;
+}
+.banner a#news-03{
+grid-area: news-03;
+}
+.banner a:hover img{
+  transform: scale(1.5);
+}
+.banner > a > span,
+.banner > a > div{
+  position: absolute;
+  color: var(--color-yellow-950);
+ /*  z-index: 999; 
+}
+
+.banner > a > span{
+  top: var(--spacing-sm);
+  left: var(--spacing-sm);
+  font-size: var(--size-xs);
+  }
+.banner > a > div{
+  bottom: var(--spacing-sm);
+  left: var(--spacing-sm);
+  font-size: var(--size-xs);
+  }
+.banner > a > div > h3{
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+.banner > a > div > p{
+  font-size: 16px;
+}

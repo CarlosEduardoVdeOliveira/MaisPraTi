@@ -1,0 +1,4 @@
+.main__aside{
+  border: 1px solid rgb(230, 21, 21);
+  grid-area: 2 / 3 / 3 / 4;
+}

@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tektur:wght@400..900&display=swap");
+
+:root {
+  /* === Colors === */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray-50: #f5f5f5;
+  --color-gray-500: #3f3f3f;
+  --color-gray-900: #1c1c1c;
+
+  --color-blue-50: #edf5fa;
+  --color-blue-100: #dcebf5;
+  --color-blue-200: #accde6;
+  --color-blue-300: #7fabd4;
+  --color-blue-400: #366bb5;
+  --color-blue-500: #002e95;
+  --color-blue-600: #002885;
+  --color-blue-700: #001f6e;
+  --color-blue-800: #001659;
+  --color-blue-900: #000f42;
+  --color-blue-950: #00092b;
+
+  --color-yellow-400: #ffc107;
+  --color-yellow-500: #f3ae2a;
+  --color-yellow-600: #ff9800;
+  --color-yellow-950: #aa6600;
+
+  --color-green-500: #0dbd3b;
+  --color-red-500: #d93025;
+
+  /* === Fonts === */
+  --font-sarabun: "Sarabun", sans-serif;
+  --font-tektur: "Tektur", system-ui;
+
+  /* === Font Sizes === */
+  --size-xs: 0.75rem;   /* 12px */
+  --size-sm: 0.875rem;  /* 14px */
+  --size-md: 1rem;      /* 16px - padrão */
+  --size-lg: 1.25rem;   /* 20px */
+  --size-xl: 1.5rem;    /* 24px */
+  --size-2xl: 2rem;     /* 32px */
+  --size-3xl: 3rem;     /* 48px */
+  --size-4xl: 4rem;     /* 64px */
+
+  /* === Spacing === */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem;  /* 8px */
+  --spacing-md: 1rem;    /* 16px */
+  --spacing-lg: 1.5rem;  /* 24px */
+  --spacing-xl: 2rem;    /* 32px */
+  --spacing-2xl: 3rem;   /* 48px */
+  --spacing-3xl: 3.25rem;/* 52px */
+  --spacing-4xl: 5.125rem;/* 82px */
+
+  /* === Border Radius === */
+  --radius-sm: 0.125rem; /* 2px */
+  --radius-md: 0.25rem;  /* 4px */
+  --radius-lg: 0.5rem;   /* 8px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-full: 100%;   /* Borda totalmente arredondada */
+
+  /* === Shadows === */
+  --shadow-xs: 0 1px 2px rgba(243, 174, 42, 0.05);
+  --shadow-sm: 0 2px 4px rgba(243, 174, 42, 0.1);
+  --shadow-md: 0 4px 8px rgba(243, 174, 42, 0.15);
+  --shadow-md-top: 0 -4px 6px rgba(243, 174, 42, 0.15);
+  --shadow-lg: 0 8px 16px rgba(243, 174, 42, 0.2);
+  --shadow-xl: 5px 5px 20px rgba(243, 174, 42, 0.2);
+
+  /* === Dimensions === */
+  --width-xs: 1rem;
+  --width-sm: 1.5rem;
+  --width-md: 2rem;
+  --width-lg: 4.5rem;
+  --width-xl: 80rem;
+  --width-2xl: 96rem;
+  --width-3xl: 128rem;
+  --width-4xl: 160rem;
+
+  --height-sm: 2rem;
+  --height-md: 6rem;
+  --height-lg: 8rem;
+
+  /* === Z-Index === */
+  --z-index-header: 100;
+  --z-index-modal: 1000;
+  --z-index-overlay: 2000;
+
+  /* === Transitions === */
+  --transition-fast: all 0.2s ease-in-out;
+  --transition-medium: all 0.4s ease-in-out;
+  --transition-slow: all 0.6s ease-in-out;
+
+  /* === Opacity === */
+  --opacity-low: 0.2;
+  --opacity-medium: 0.5;
+  --opacity-high: 0.8;
+
+  /* === Line Heights === */
+  --line-height-xs: 1.2;
+  --line-height-sm: 1.4;
+  --line-height-md: 1.6;
+  --line-height-lg: 1.8;
+
+  /* === Font Weights === */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* === Breakpoints === */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1920px;
+}

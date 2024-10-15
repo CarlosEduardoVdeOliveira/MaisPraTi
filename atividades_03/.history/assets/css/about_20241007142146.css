@@ -1,0 +1,18 @@
+
+body.body__about{
+  font-family: var(--font-sarabun);
+  background: var(--blue-50);
+  color: var(--blue-950);
+  line-height: var(--line-height-md);
+  letter-spacing: 1.5px;
+  font-size: var(--size-lg);
+  box-sizing: border-box;
+}
+
+.main__content--about{
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.main__content--about

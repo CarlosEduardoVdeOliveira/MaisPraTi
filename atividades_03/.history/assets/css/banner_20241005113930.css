@@ -1,0 +1,19 @@
+.banner{
+  width: 100%;
+  border: 1px solid blueviolet;
+  grid-area: banner;
+  display: grid;
+  grid-template:"p p s"
+                "p p s"
+                "p p t"
+                "p p t";
+}
+.banner a#p{
+  gri
+}
+.banner a#s{
+gri
+}
+.banner a#t{
+gri
+}

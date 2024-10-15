@@ -1,0 +1,112 @@
+.main__content{
+  grid-area: main;
+  width: 100%;
+}
+.main__content--list-item{
+  padding: 32px 16px 32px 0;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  margin-right: 32px;
+  gap: 32px;
+  border-bottom: 1px solid var(--color-blue-400);
+}
+.main__content--list-item:first-child{
+  padding-top: 0;
+}
+.main__content--list-item:last-child{
+  border: none;
+}
+.main__content--list-item--image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px;
+}
+.main__content--list-item--content{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.main__content--list-item--content span:first-child{
+  color: var(--color-blue-950);
+  font-size: 18px;
+  font-weight: 500;
+}
+.main__content--list-item--content span:last-child{
+  color: var(--color-yellow-600);
+  font-size: 14px;
+  font-weight: 500;
+}
+.main__content--list-item--content h3{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-white);
+  transition: var(--transition-slow);
+}
+
+.main__content--list-item--content h3:hover{
+  color: var(--color-blue-100);
+}
+
+.main__content--list-item--content ul li a{
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  color: var(--color-blue-800);
+  transition: var(--transition-slow);
+}
+
+.main__content--list-item--content ul li a:hover{
+  color: var(--color-blue-950);
+}
+.main__content--list-item--content ul li a::before{
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--color-yellow-400);
+  opacity: var(--opacity-medium);
+  font-size: 24px;
+  align-self: center;
+}
+
+.main__content--list-item--content span.live{
+  background-color: var(--color-yellow-600);
+  color: var(--color-blue-50);
+  display: inline;
+  width: 100px;
+  padding: 7px 5px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  animation: blink 2s ease-in-out infinite;
+}
+.list__footer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@keyframes blink{
+  0% {
+    background-color: var(--color-yellow-500);
+  }
+  50% {
+    background-color: var(--color-yellow-400);
+  }
+  100% {
+    background-color: var(--color-yellow-500);
+  }
+}
+
+
+@media screen and (min-width: 769px){
+  .main__content{
+    grid-area: aside;
+    border-radius: 10px;
+    padding: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+  }
+}

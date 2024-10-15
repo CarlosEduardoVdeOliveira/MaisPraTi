@@ -1,0 +1,25 @@
+
+
+.main__content--list-item--content span.live{
+  background-color: var(--color-yellow-500);
+  color: var(--color-blue-50);
+  display: inline;
+  width: 100px;
+  padding: 7px 5px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 5px;
+  animation: blink 2s ease-in-out infinite;
+}
+
+@keyframes blink{
+  0% {
+    background-color: var(--color-yellow-950);
+  }
+  50% {
+    background-color: var(--color-yellow-500);
+  }
+  100% {
+    background-color: var(--color-yellow-950);
+  }
+}

@@ -1,0 +1,44 @@
+.header__content {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: url("../images/ceu-estrelado-header.png") no-repeat center/cover;
+  background-color: var(--color-blue-900);
+  justify-content: space-between;
+  height: var(--height-md);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-md);
+  z-index: 999;
+}
+
+.header__content-logo img{
+  width: var(--width-lg);
+}
+.header__nav--container{
+  display: none;
+  transition: var(--transition-slow);
+}
+
+.header__nav--list-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.header__nav--list-item-link{
+  color: var(--color-yellow-500);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-weight-medium);
+  transition: var(--transition-fast);
+}
+.header__nav--list-item-link:hover{
+  background-color: var(--color-blue-50);
+}
+.active{
+  background-color: var(--color-blue-50);
+}
+
