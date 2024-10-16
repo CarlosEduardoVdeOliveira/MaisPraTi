@@ -7,7 +7,7 @@ O objetivo deste projeto é desenvolver uma página web utilizando HTML e CSS qu
 
 ### Estrutura da Página:
 - **Header**: 
-  - Contém o título do site e um menu de navegação simples com 3 links fictícios (ex.: Home, Sobre, Contato).
+  - Contém o título do site e um menu de navegação simples com 3 links Home, Sobre, Contato.
 - **Section**: 
   - Área principal do conteúdo, com um parágrafo explicando sobre o site.
 - **Aside**: 
