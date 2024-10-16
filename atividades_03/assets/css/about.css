@@ -119,6 +119,7 @@ body.body__about{
 .champion-titles h3{
   font-size: var(--size-xl);
   font-weight: var(--font-weight-extra-bold);
+  text-align: center;
 }
 .champion-titles p.year-champions{
   font-size: var(--size-lg);
