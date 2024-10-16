@@ -1,8 +1,0 @@
-.banner{
-  width: 100%;
-  border: 1px solid blueviolet;
-  grid-area: banner;
-  display: grid;
-  grid-template-columns: 1fr / 2fr 2fr;
-  grid-template-columns: 1fr / 2fr 2fr;
-}

@@ -1,9 +1,0 @@
-.banner{
-  width: 100%;
-  border: 1px solid blueviolet;
-  grid-area: banner;
-  display: grid;
-  grid-template-areas: ""b b a"
-            "b b c"
-            "b b c"";
-}

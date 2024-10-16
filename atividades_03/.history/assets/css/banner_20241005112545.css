@@ -1,7 +1,0 @@
-.banner{
-  width: 100%;
-  border: 1px solid blueviolet;
-  grid-area: banner;
-  display: grid;
-  grid-template: repeat() 2fr 2fr;
-}
