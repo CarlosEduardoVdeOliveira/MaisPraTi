@@ -38,4 +38,11 @@ Para visualizar e modificar este projeto, você precisará de:
 ### Instalação
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/estrutura-pagina-web.git
+   git clone https://github.com/CarlosEduardoVdeOliveira/MaisPraTi
+
+2. Acesse
+  /MaisPraTi/atividades_03
+
+### Deploy
+  [Acesse](https://mais-pra-ti-five.vercel.app/)
+
