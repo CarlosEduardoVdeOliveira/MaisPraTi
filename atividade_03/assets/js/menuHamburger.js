@@ -18,32 +18,3 @@ menuOpen.addEventListener("click", () => {
     iconOpen.classList.remove(iconMenuHamburgerClose)
   }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* navMenuList.classList.toggle("menu__hamburger--container--list-links")
-navMenuList.classList.remove("header__nav--list-links")
-links.forEach(link => link.classList.toggle("menu__hamburger--container--list-item-link"))
-links.forEach(link => link.classList.remove("header__nav--list-item-link")) */
