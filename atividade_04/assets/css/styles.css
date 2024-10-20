@@ -1,0 +1,50 @@
+@import url("./reset.css");
+@import url("./global-variables.css");
+@import url("./header.css");
+@import url("./menuHamburger.css");
+@import url("./banner.css");
+@import url("./about.css");
+@import url("./services.css");
+@import url("./testimony.css");
+@import url("./gallery.css");
+@import url("./contact.css");
+@import url("./footer.css");
+
+body {
+  font-family: var(--font-lato);
+  overflow-x: hidden;
+}
+
+h2{
+  font-size: var(--size-2xl);
+  font-weight: var(--font-weight-extra-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--spacing-xs);
+  margin-bottom: var(--spacing-4xl);
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-xl);
+  text-align: center;
+}
+
+h2 i{
+  color: var(--color-green-900);
+}
+
+
+@media screen and (max-width: 320px) {
+  html{
+    font-size: 75%;
+  }
+  main section{
+    padding: var(--spacing-md);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  html{
+    font-size: 87.5%;
+  }
+}

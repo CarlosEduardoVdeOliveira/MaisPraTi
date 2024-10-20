@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="shortcut icon" href="./assets/images/image_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
+    
+    <title>Pescaria Radical</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container-image">
+        <img
+          src="./assets/images/logo.svg"
+          class="w-100"
+          alt="Logo Pescar Radical"
+        />
+      </div>
+      <button class="menu-hamburger" id="btn-menu-hamburger"><i class="fa-solid fa-bars-staggered"></i></button>
+      <nav id="nav-menu">
+        <ul>
+          <li>
+            <a href="#about">Sobre</a>
+          </li>
+          <li>
+            <a href="#services">Serviços</a>
+          </li>
+          <li>
+            <a href="#testimonies">Depoimentos</a>
+          </li>
+          <li>
+            <a href="#gallery">Galeria</a>
+          </li>
+          <li>
+            <a href="#contact">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Banner Principal (Slider) -->
+    <section class="banner">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+            src="./assets/images/banner_01.png"
+            alt="Paisagem de pescaria"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+            src="./assets/images/banner_02.jpeg"
+            alt="Equipamentos de pesca"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/images/banner_03.jpeg"
+              alt="Guia de pesca"
+            />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about">
+      <div class="about-content">
+        <h2><i class="fa-solid fa-house-chimney"></i> Quem somos</h2>
+        <p>
+          Nossa empresa é dedicada a oferecer experiências únicas de pesca em
+          lugares paradisíacos, com guias especializados e todo o equipamento
+          necessário para tornar sua pescaria inesquecível.
+        </p>
+        <p>
+          Nossos colaboradores estão em intenso trabalho de qualificação 
+          através de treinamentos. Com relação à comunidade de nosso 
+          entorno buscamos ter mão de obra 100% local e capacitamos 
+          potenciais trabalhadores das comunidades locais para utilização 
+          no estabelecimento e ou colocação no mercado de trabalho, 
+          desenvolvendo e motivando, desta forma, a questão social.
+        </p>
+        <img src="./assets/images/logo.svg" alt="logo">
+      </div>
+      <div class="about-gallery">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+              src="./assets/images/alojamento_02.jpg"
+              alt="Paisagem de pescaria"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+              src="./assets/images/b1.jpeg"
+              alt="Equipamentos de pesca"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/barco_02.jpeg"
+                alt="Guia de pesca"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/gallery/1.jpg"
+                alt="Guia de pesca"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/gallery/2.jpg"
+                alt="Guia de pesca"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./assets/images/gallery/17.jpg"
+                alt="Guia de pesca"
+              />
+            </div>
+          </div>
+          <!-- Navegação Slider -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="services">
+      <h2><i class="fa-solid fa-gear"></i> Nossos serviços</h2>
+      <div class="cards">
+        <!-- Aqui você consumiria a API para preencher dinamicamente -->
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/images/barco_01.jpg" alt="Barcos ancorados">
+          </div>
+          <div class="card-content">
+            <h3>Locação de Barcos</h3>
+            <p>Tenha acesso aos melhores barcos para sua aventura de pesca.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/images/guias_01.png" alt="Barcos ancorados">
+          </div>
+          <div class="card-content">
+            <h3>Guias de Pesca</h3>
+          <p>
+            Nossos guias especialistas conhecem os melhores locais de pesca.
+          </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/images/equipamentos.jpg" alt="Barcos ancorados">
+          </div>
+          <div class="card-content">
+            <h3>Equipamentos</h3>
+          <p>
+            Oferecemos os melhores equipamentos de pesca para todas as
+            modalidades.
+          </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/images/alojamento_02.jpg" alt="Barcos ancorados">
+          </div>
+          <div class="card-content">
+            <h3>Alojamento</h3>
+          <p>
+            Oferecemos estadias para o melhor conforto dos nossos clientes
+          </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img">
+            <img src="./assets/images/refeicao_01.jpg" alt="Barcos ancorados">
+          </div>
+          <div class="card-content">
+            <h3>Alimentação</h3>
+          <p>
+            Oferecemos café da manhã, almoço e jantar
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Testemunhos -->
+    <section id="testimonies" class="testimonies">
+      <h2><i class="fa-solid fa-comment-dots"></i> O que falam sobre nós</h2>
+      <div class="testimonies-content">
+        <div class="testimony">
+          <img src="./assets/images/11.jpg" alt="Foto de cliente" />
+          <div class="testimony-content">
+            <p>A melhor experiência de pesca que já tive! Recomendo a todos.</p>
+            <span>João Pescador</span>
+          </div>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="testimony">
+          <img src="./assets/images/13.jpg" alt="Foto de cliente" />
+          <div class="testimony-content">
+            <p>Guia super atencioso e equipamentos de primeira. Nota 10!</p>
+            <span>Maria Pesca</span>
+          </div>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+        <div class="testimony">
+          <img src="./assets/images/01.png" alt="Foto de cliente" />
+          <div class="testimony-content">
+            <p>Guia super atencioso e equipamentos de primeira. Nota 10!</p>
+            <span>Maria Pesca</span>
+          </div>
+          <i class="fa-solid fa-quote-right"></i>
+        </div>
+      </div>
+    </section>
+    <!-- Seção Testemunhos -->
+    <section id="gallery" class="gallery">
+      <h2><i class="fa-solid fa-image"></i>Galeria</h2>
+      <div id="customize-thumbnails-gallery" class="lg-custom-thumbnails">
+        <a href="./assets/images/13.jpg">
+          <img src="./assets/images/13.jpg" alt=""/>
+      </a>
+      <a href="./assets/images/WhatsApp-Image-2019-11-11-at-10.41.23.jpeg">
+          <img src="./assets/images/WhatsApp-Image-2019-11-11-at-10.41.23.jpeg" alt=""/>
+      </a>
+      </div>
+    </section>
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+      <div>
+        <h2><i class="fa-solid fa-envelope"></i> Entre em contato e faça sua reserva</h2>
+      <form class="form-contact">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required placeholder="Nome completo" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="exemplo@email.com" />
+
+        <label for="telephone">Telefone:</label>
+        <input type="tel" id="telephone" name="telephone" required placeholder="99999999999" />
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required  placeholder="Digite..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Pescaria Aventura. Todos os direitos reservados.</p>
+      <div class="redes-sociais">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const gallery = document.getElementById("customize-thumbnails-gallery");
+      lightGallery(gallery, {
+        plugins: [lgZoom, lgThumbnail],
+        controls: true,
+        thumbnail: true,
+        mobileSettings: {
+          controls: true,
+          showCloseIcon: false,
+          download: false,
+          rotate: false
+        }
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,62 @@
+section.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--spacing-4xl) auto;
+  padding: var(--spacing-4xl);
+  background-color: var(--color-green-500);
+  width: 100%;
+}
+section.services h2{
+  margin-top: var(--spacing-md);
+}
+section.services .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: var(--spacing-lg);
+  row-gap: var(--spacing-4xl);
+}
+
+section.services .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--color-green-100);
+  box-shadow: 5px 5px 10px var(--color-green-900);
+  background-color: #e5f3f8;
+  padding: 0;
+  border-radius: var(--radius-lg);
+  width: 300px;
+  height: 320px;
+}
+section.services .cards .card .card-img{
+  width: 100%;
+  height: 30%;
+}
+section.services .cards .card .card-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: var(--radius-lg);
+  border-top-right-radius: var(--radius-lg);
+}
+
+section.services .cards .card .card-content{
+  padding: var(--spacing-md);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section.services .cards .card .card-content h3{
+  font-size: var(--size-lg);
+  font-weight: var(--font-weight-bold);
+}
+section.services .cards .card .card-content p{
+  font-size: var(--size-md);
+  text-wrap: balance;
+}

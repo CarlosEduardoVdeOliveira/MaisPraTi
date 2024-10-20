@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Irish+Grover&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --color-blue-50: #ebf5f7;
+  --color-blue-100: #daeef2;
+  --color-blue-200: #a4cfdb;
+  --color-blue-300: #77b4c7;
+  --color-blue-400: #2f7f9e;
+  --color-blue-500: #004d73;
+  --color-blue-600: #004269;
+  --color-blue-700: #003357;
+  --color-blue-800: #002545;
+  --color-blue-900: #001933;
+  --color-blue-950: #000e21;
+
+  --color-green-50: #f2fcf8;
+  --color-green-100: #e6faf1;
+  --color-green-200: #c1f5dc;
+  --color-green-300: #9dedc1;
+  --color-green-400: #5bde87;
+  --color-green-500: #20d147;
+  --color-green-600: #1abd3b;
+  --color-green-700: #119c2a;
+  --color-green-800: #0b7d1e;
+  --color-green-900: #075e14;
+  --color-green-950: #023d0a;
+
+  --color-yellow-400: rgb(255, 193, 7);
+  --color-yellow-500: rgb(243, 174, 42);
+  --color-yellow-600: rgb(255, 152, 0);
+  --color-yellow-950: rgb(170, 102, 0);
+
+  --color-red-500: rgb(217, 48, 37);
+  /*Fonts==================*/
+  --font-lato: "Lato", sans-serif;
+  --font-irish-grover: "Irish Grover", system-ui;
+  /* Fonts size========================== */
+  --size-xs: 0.75rem; /* (12px)  (xs) */
+  --size-sm: 0.875rem; /* (14px)  (sm)*/
+  --size-md: 1rem; /* (16px) — geralmente o tamanho padrão. (md)*/
+  --size-lg: 1.25rem; /* (20px) (lg)*/
+  --size-xl: 1.5rem; /* (24px) (xl)*/
+  --size-2xl: 2rem; /*  (32px) (2xl)*/
+  --size-3xl: 3rem; /* (48px) (3xl)*/
+  --size-4xl: 4rem; /* (64px) (4xl)*/
+  /* Spacing (paddings, margins)==================== */
+  --spacing-xs: 0.25rem; /* (4px) */
+  --spacing-sm: 0.5rem; /* (8px) */
+  --spacing-md: 1rem; /* (16px) */
+  --spacing-lg: 1.5rem; /* (24px) */
+  --spacing-xl: 2rem; /* (32px) */
+  --spacing-2xl: 3rem; /* (48px) */
+  --spacing-3xl: 3.25rem; /* (52px) */
+  --spacing-4xl: 5.125rem; /* (82px) */
+  /*Border Radius =============================*/
+  --radius-sm: 0.125rem; /* (2px) */
+  --radius-md: 0.25rem; /* (4px) */
+  --radius-lg: 0.5rem; /* (8px) */
+  --radius-xl: 1rem; /* (16px) */
+  --radius-full: 100%; /* Para bordas completamente arredondadas */
+  /*Box Shadows===================================== */
+  --shadow-xs: 0px 1px 2px rgba(255, 193, 7, 0.05);
+  --shadow-sm: 0px 2px 4px rgba(255, 193, 7, 0.1);
+  --shadow-md: 0px 4px 8px rgba(255, 193, 7, 0.15);
+  --shadow-md-top: 0 -4px 6px rgba(255, 193, 7, 0.15);
+  --shadow-lg: 0px 8px 16px rgba(255, 193, 7, 0.2);
+  --shadow-xl: 5px 5px 20px rgba(255, 193, 7, 0.2);
+  /*Widths==========================*/
+  --width-xs: 1rem; /* 16px Tamanho extra pequeno */
+  --width-sm: 1.5rem; /* 24px Tamanho pequeno */
+  --width-md: 2rem; /* 32px Tamanho médio */
+  --width-lg: 4.75rem; /* 76px Tamanho grande */
+  --width-xl: 18.75rem; /* 300px Tamanho extra grande */
+  --width-2xl: 31.25rem; /* 500px Tamanho 2x extra grande */
+  --width-3xl: 77.5rem; /* 1240px Tamanho 3x extra grande */
+  --width-4xl: 128rem; /* 2048px Tamanho 4x extra grande */
+  --width-full: 100%; /* Tamanho full*/ 
+  /*Heights=====================*/
+  --height-sm: 2rem;
+  --height-md: 6rem;
+  --height-lg: 8rem;
+  --height-full: 100dvh;
+  /*Z-index=======================*/
+  --z-index-header: 100;
+  --z-index-modal: 1000;
+  --z-index-overlay: 2000;
+
+  /*transition animation=======================*/
+  --transition-fast: all 0.2s ease-in-out;
+  --transition-medium: all 0.4s ease-in-out;
+  --transition-slow: all 0.6s ease-in-out;
+  /*Opacity============================*/
+  --opacity-low: 0.2;
+  --opacity-medium: 0.5;
+  --opacity-high: 0.8;
+  /*Line Heights ====================*/
+  --line-height-xs: 1.2;
+  --line-height-sm: 1.4;
+  --line-height-md: 1.6;
+  --line-height-lg: 1.8;
+  /*Font Weights=============================*/
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 900;
+  /*Break points=====================================*/
+  --breakpoint-xs: 320px; /* Pequenos celulares */
+  --breakpoint-sm: 480px; /* Médios celulares */
+  --breakpoint-md: 768px; /* Tablets (retrato) */
+  --breakpoint-lg: 1024px; /* Tablets (paisagem) */
+  --breakpoint-xl: 1200px; /* Desktops pequenos */
+  --breakpoint-2xl: 1440px; /* Desktops médios */
+  --breakpoint-3xl: 1920px; /* Desktops grandes */
+}

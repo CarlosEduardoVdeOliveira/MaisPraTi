@@ -1,0 +1,44 @@
+section.gallery{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--spacing-4xl) auto;
+  padding: var(--spacing-4xl);
+  width: 100%;
+}
+
+section.gallery h2{
+  margin-top: var(--spacing-md);
+}
+
+section.gallery .lg-custom-thumbnails{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  row-gap: 5px;
+}
+
+section.gallery .lg-custom-thumbnails a img{
+  width: 300px;
+}
+
+
+.lg-thumb {
+  display: block !important;
+}
+
+.lg-actions {
+  display: flex !important;
+}
+
+.lg-next, .lg-prev {
+  display: block !important;
+  width: var(--width-lg);
+}
+
+.lg-close {
+  display: block !important;
+}
