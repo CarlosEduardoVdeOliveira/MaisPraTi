@@ -22,28 +22,30 @@ Este projeto é uma landing page moderna desenvolvida para uma empresa que ofere
 
 1. **Header**:
    - Contém o logo da empresa e um menu de navegação para as seções "Sobre", "Serviços", "Testemunhos" e "Contato".
-   - Inclui uma chamada para ação (CTA): "Entre em Contato".
+   ![Header](./assets/images/header.png)
+   ![Header mobile](./assets/images/header_mobile.png)
 
 2. **Banner Principal (Slider)**:
    - Carrossel interativo destacando os principais serviços da empresa com navegação via botões.
    - Implementado com **Swiper.js**.
-
+   ![Banner](./assets/images/banner.png)
 3. **Seção "Sobre"**:
    - Breve introdução à empresa e seus serviços com texto descritivo.
-
+   ![Sobre](./assets/images/sobre.png)
 4. **Seção "Serviços"**:
    - Cards descrevem os principais serviços oferecidos.
-
+   ![Services](./assets/images/services.png)
 5. **Seção "Testemunhos"**:
    - Depoimentos dinâmicos de clientes consumidos de uma API personalizada.
    - Cada depoimento exibe o nome, foto e mensagem do cliente.
-
+   ![Testimonies](./assets/images/testimony.png)
 6. **Seção "Contato"**:
    - Formulário de contato com validação de campos (nome, email, telefone, mensagem).
    - Integração com **EmailJS** para envio de dados diretamente para um email.
-
+   ![Contact](./assets/images/contact.png)
 7. **Footer**:
    - Links para as redes sociais e informações de política de privacidade.
+   ![Footer](./assets/images/footer.png)
 
 ### Validação de Formulário
 
@@ -62,7 +64,15 @@ O slider foi implementado utilizando **Swiper.js**, proporcionando uma navegaç�
 - O layout da página é totalmente responsivo, adaptando-se a diferentes tamanhos de tela (desktop, tablet e smartphone).
 - A responsividade foi implementada com **CSS Media Queries**.
 
-## Como Visualizar o Projeto Localmente
+## Bibliotecas Externas Utilizadas
+
+- **Swiper.js**: [Swiper.js](https://swiperjs.com/)
+- **AOS.js**: [AOS.js](https://michalsnik.github.io/aos/)
+- **lightGallery**: [lightGallery](https://www.lightgalleryjs.com/)
+- **Font Awesome**: [Font Awesome](https://fontawesome.com/)
+- **EmailJS**: [EmailJS](https://www.emailjs.com/)
+
+## Github
 
 1. Clone o repositório:
    ```bash
@@ -76,20 +86,8 @@ O slider foi implementado utilizando **Swiper.js**, proporcionando uma navegaç�
 
 3. Abra o arquivo `index.html` no navegador de sua escolha.
 
-## Bibliotecas Externas Utilizadas
-
-- **Swiper.js**: [Swiper.js](https://swiperjs.com/)
-- **AOS.js**: [AOS.js](https://michalsnik.github.io/aos/)
-- **lightGallery**: [lightGallery](https://www.lightgalleryjs.com/)
-- **Font Awesome**: [Font Awesome](https://fontawesome.com/)
-- **EmailJS**: [EmailJS](https://www.emailjs.com/)
-
-## Link para Deploy
-
-O projeto está disponível online no seguinte link:
-
-[Pescarias Radicais - Landing Page](https://mais-pra-ti-gilt.vercel.app/)
-
-## Screenshots
-
-Insira aqui imagens da aplicação, mostrando as principais seções como o banner principal, serviços, depoimentos e formulário de contato.
+### Deploy
+  - Para acessar o site [clique aqui](https://mais-pra-ti-challenge-03.vercel.app/index.html)
+  - Se preferir copie e cole o link:
+    ```bash
+    https://mais-pra-ti-challenge-03.vercel.app/index.html
