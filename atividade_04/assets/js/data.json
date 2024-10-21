@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Harold",
+    "photo_url": "./assets/images/01.png",
+    "testimony": "Donec posuere metus vitae ipsum. Aliquam non mauris."
+  },
+  {
+    "id": 2,
+    "name": "Dev",
+    "photo_url": "./assets/images/2.png",
+    "testimony": "Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum."
+  },
+  {
+    "id": 3,
+    "name": "Juli",
+    "photo_url": "./assets/images/03.jpeg",
+    "testimony": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci."
+  },
+  {
+    "id": 4,
+    "name": "Ebonee",
+    "photo_url": "./assets/images/3.png",
+    "testimony": "Nulla justo. Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis. Sed ante."
+  },
+  {
+    "id": 5,
+    "name": "Cindee",
+    "photo_url": "./assets/images/4.png",
+    "testimony": "Suspendisse potenti. Cras in purus eu magna vulputate luctus."
+  },
+  {
+    "id": 6,
+    "name": "Jerome",
+    "photo_url": "./assets/images/6.png",
+    "testimony": "Duis mattis egestas metus. Aenean fermentum."
+  },
+  {
+    "id": 7,
+    "name": "Oren",
+    "photo_url": "./assets/images/11.jpg",
+    "testimony": "Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus."
+  },
+  {
+    "id": 8,
+    "name": "Egbert",
+    "photo_url": "./assets/images/13.jpg",
+    "testimony": "Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit."
+  },
+  {
+    "id": 9,
+    "name": "Nehemiah",
+    "photo_url": "./assets/images/14.jpg",
+    "testimony": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio."
+  },
+  {
+    "id": 10,
+    "name": "Monro",
+    "photo_url": "./assets/images/banner_02.jpeg",
+    "testimony": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis."
+  }
+]

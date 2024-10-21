@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/testimony.css">
     <link rel="shortcut icon" href="./assets/images/image_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
-    
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Pescaria Radical</title>
   </head>
   <body>
@@ -44,8 +45,8 @@
     </header>
 
     <!-- Banner Principal (Slider) -->
-    <section class="banner">
-      <div class="swiper-container">
+    <section data-aos="zoom-in" data-aos-duration="1500" class="banner">
+      <div class="swiper-container swiper-container-1">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <img
@@ -61,28 +62,27 @@
           </div>
           <div class="swiper-slide">
             <img
-              src="./assets/images/banner_03.jpeg"
+              src="./assets/images/bg_contato.jpg"
               alt="Guia de pesca"
             />
           </div>
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next swiper-button-next-1"></div>
+        <div class="swiper-button-prev swiper-button-prev-1"></div>
+        <div class="swiper-pagination swiper-pagination-1"></div>
       </div>
-      
     </section>
 
     <!-- Seção Sobre -->
     <section id="about" class="about">
       <div class="about-content">
-        <h2><i class="fa-solid fa-house-chimney"></i> Quem somos</h2>
-        <p>
+        <h2  data-aos="fade-right" data-aos-duration="1500"><i class="fa-solid fa-house-chimney"></i> Quem somos</h2>
+        <p  data-aos="fade-right" data-aos-duration="2000">
           Nossa empresa é dedicada a oferecer experiências únicas de pesca em
           lugares paradisíacos, com guias especializados e todo o equipamento
           necessário para tornar sua pescaria inesquecível.
         </p>
-        <p>
+        <p  data-aos="fade-right" data-aos-duration="2500">
           Nossos colaboradores estão em intenso trabalho de qualificação 
           através de treinamentos. Com relação à comunidade de nosso 
           entorno buscamos ter mão de obra 100% local e capacitamos 
@@ -90,10 +90,10 @@
           no estabelecimento e ou colocação no mercado de trabalho, 
           desenvolvendo e motivando, desta forma, a questão social.
         </p>
-        <img src="./assets/images/logo.svg" alt="logo">
+        <img  data-aos="fade-right" data-aos-duration="3000" src="./assets/images/logo.svg" alt="logo">
       </div>
-      <div class="about-gallery">
-        <div class="swiper-container">
+      <div  data-aos="fade-left" data-aos-duration="1500" class="about-gallery">
+        <div class="swiper-container swiper-container-2">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img
@@ -115,35 +115,35 @@
             </div>
             <div class="swiper-slide">
               <img
-                src="./assets/images/gallery/1.jpg"
+                src="./assets/images/1.jpg"
                 alt="Guia de pesca"
               />
             </div>
             <div class="swiper-slide">
               <img
-                src="./assets/images/gallery/2.jpg"
+                src="./assets/images/2.jpg"
                 alt="Guia de pesca"
               />
             </div>
-            <div class="swiper-slide">
+            <div class=" swiper-slide">
               <img
-                src="./assets/images/gallery/17.jpg"
+                src="./assets/images/17.jpg"
                 alt="Guia de pesca"
               />
             </div>
           </div>
           <!-- Navegação Slider -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+          <div class="swiper-button-next swiper-button-next-2"></div>
+          <div class="swiper-button-prev swiper-button-prev-2"></div>
+          <div class="swiper-pagination swiper-pagination-2"></div>
         </div>
       </div>
     </section>
 
     <!-- Seção Serviços -->
     <section id="services" class="services">
-      <h2><i class="fa-solid fa-gear"></i> Nossos serviços</h2>
-      <div class="cards">
+      <h2  data-aos="fade-down" data-aos-duration="1500"><i class="fa-solid fa-gear"></i> Nossos serviços</h2>
+      <div  data-aos="fade-down" data-aos-duration="1500" class="cards">
         <!-- Aqui você consumiria a API para preencher dinamicamente -->
         <div class="card">
           <div class="card-img">
@@ -204,38 +204,18 @@
 
     <!-- Seção Testemunhos -->
     <section id="testimonies" class="testimonies">
-      <h2><i class="fa-solid fa-comment-dots"></i> O que falam sobre nós</h2>
-      <div class="testimonies-content">
-        <div class="testimony">
-          <img src="./assets/images/11.jpg" alt="Foto de cliente" />
-          <div class="testimony-content">
-            <p>A melhor experiência de pesca que já tive! Recomendo a todos.</p>
-            <span>João Pescador</span>
-          </div>
-          <i class="fa-solid fa-quote-right"></i>
+      <h2  data-aos="fade-down" data-aos-duration="1500"><i class="fa-solid fa-comment-dots"></i> O que falam sobre nós</h2>
+      <div class="testimonies-content swiper-container swiper-container-3">
+        <div class="swiper-wrapper swiper-wrapper3" id="testimonies-container">
+          <!-- Depoimentos carregados dinamicamente -->
         </div>
-        <div class="testimony">
-          <img src="./assets/images/13.jpg" alt="Foto de cliente" />
-          <div class="testimony-content">
-            <p>Guia super atencioso e equipamentos de primeira. Nota 10!</p>
-            <span>Maria Pesca</span>
-          </div>
-          <i class="fa-solid fa-quote-right"></i>
-        </div>
-        <div class="testimony">
-          <img src="./assets/images/01.png" alt="Foto de cliente" />
-          <div class="testimony-content">
-            <p>Guia super atencioso e equipamentos de primeira. Nota 10!</p>
-            <span>Maria Pesca</span>
-          </div>
-          <i class="fa-solid fa-quote-right"></i>
-        </div>
+        <div class="swiper-pagination swiper-pagination-3"></div>
       </div>
     </section>
     <!-- Seção Testemunhos -->
     <section id="gallery" class="gallery">
-      <h2><i class="fa-solid fa-image"></i>Galeria</h2>
-      <div id="customize-thumbnails-gallery" class="lg-custom-thumbnails">
+      <h2  data-aos="fade-down" data-aos-duration="1500"><i class="fa-solid fa-image"></i>Galeria</h2>
+      <div  data-aos="fade-down" data-aos-duration="1500" id="customize-thumbnails-gallery" class="lg-custom-thumbnails">
         <a href="./assets/images/13.jpg">
           <img src="./assets/images/13.jpg" alt=""/>
       </a>
@@ -248,20 +228,20 @@
     <section id="contact" class="contact">
       <div>
         <h2><i class="fa-solid fa-envelope"></i> Entre em contato e faça sua reserva</h2>
-      <form class="form-contact">
-        <label for="name">Nome:</label>
-        <input type="text" id="name" name="name" required placeholder="Nome completo" />
+      <form id="form-contact">
+        <label  data-aos="fade-left" data-aos-duration="1500" for="name">Nome:</label>
+        <input  data-aos="fade-left" data-aos-duration="1500" type="text" id="name" name="name" required placeholder="Nome completo" />
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required placeholder="exemplo@email.com" />
+        <label  data-aos="fade-left" data-aos-duration="2000" for="email">Email:</label>
+        <input  data-aos="fade-left" data-aos-duration="2000" type="email" id="email" name="email" required placeholder="exemplo@email.com" />
 
-        <label for="telephone">Telefone:</label>
-        <input type="tel" id="telephone" name="telephone" required placeholder="99999999999" />
+        <label  data-aos="fade-left" data-aos-duration="2500" for="telephone">Telefone:</label>
+        <input  data-aos="fade-left" data-aos-duration="2500" type="tel" id="telephone" name="telephone" required placeholder="99999999999" />
 
-        <label for="message">Mensagem:</label>
-        <textarea id="message" name="message" required  placeholder="Digite..."></textarea>
+        <label  data-aos="fade-left" data-aos-duration="3000" for="message">Mensagem:</label>
+        <textarea  data-aos="fade-left" data-aos-duration="3000" id="message" name="message" required  placeholder="Digite..."></textarea>
 
-        <button type="submit">Enviar</button>
+        <button  data-aos="fade-left" data-aos-duration="3500" type="submit">Enviar</button>
       </form>
       </div>
     </section>
@@ -278,22 +258,8 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./assets/js/script.js" type="module"></script>
   </body>
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const gallery = document.getElementById("customize-thumbnails-gallery");
-      lightGallery(gallery, {
-        plugins: [lgZoom, lgThumbnail],
-        controls: true,
-        thumbnail: true,
-        mobileSettings: {
-          controls: true,
-          showCloseIcon: false,
-          download: false,
-          rotate: false
-        }
-      });
-    });
-  </script>
 </html>
