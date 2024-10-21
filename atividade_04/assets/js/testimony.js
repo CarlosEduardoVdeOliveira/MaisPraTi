@@ -36,7 +36,7 @@ fetch(apiUrl, { method: 'GET' })
 // Instancia para o terceiro swiper
 const swiper = new Swiper('.swiper-container-3', {
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination-3',
@@ -48,7 +48,7 @@ const swiper = new Swiper('.swiper-container-3', {
   },
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
     },
     480: {
       slidesPerView: 1,

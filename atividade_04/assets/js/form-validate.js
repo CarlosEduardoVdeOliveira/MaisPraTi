@@ -1,6 +1,4 @@
 const formContact = document.getElementById("form-contact");
-const spanError = document.querySelectorAll("#form-contact span")
-
 
 formContact.addEventListener("submit", function(event) {
   event.preventDefault();
@@ -109,3 +107,6 @@ function sendMail(templateParams){
       }).showToast();
     });
 }
+(function() {
+  emailjs.init("XBYJn-NFyncRrRm7o");
+})();

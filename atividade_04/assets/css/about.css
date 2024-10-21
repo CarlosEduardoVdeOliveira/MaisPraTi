@@ -6,7 +6,7 @@ section.about {
   padding: var(--spacing-4xl) var(--spacing-xl);
   gap: var(--spacing-md);
 }
-section.about .swiper-slide .about-content{
+section.about .about-content{
   margin-top: var(--spacing-md);
   display: flex;
   flex-direction: column;
@@ -15,7 +15,7 @@ section.about .swiper-slide .about-content{
   text-wrap: balance;
 }
 
-section.about .swiper-slide .about-gallery{
+section.about .about-gallery{
   margin-top: var(--spacing-md);
   width: 500px;
   height: 400px;
@@ -25,7 +25,7 @@ section.about .about-gallery .swiper-slide img{
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 @media screen and (max-width: 912px) {

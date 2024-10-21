@@ -50,7 +50,7 @@ section.testimonies .swiper-slide i{
 }
 @media screen and (max-width: 992px) {
   section.testimonies .swiper-slide {
-    height: 200px !important;
+    max-height: 250px !important;
   }
   section.testimonies{
     padding-left: var(--spacing-md);
