@@ -29,7 +29,7 @@
   --color-yellow-600: rgb(255, 152, 0);
   --color-yellow-950: rgb(170, 102, 0);
 
-  --color-red-500: rgb(217, 48, 37);
+  --color-red-500: #d93025;
   /*Fonts==================*/
   --font-lato: "Lato", sans-serif;
   --font-irish-grover: "Irish Grover", system-ui;
@@ -76,8 +76,9 @@
   --width-full: 100%; /* Tamanho full*/ 
   /*Heights=====================*/
   --height-sm: 2rem;
-  --height-md: 6rem;
-  --height-lg: 8rem;
+  --height-md: 4rem;
+  --height-lg: 6rem;
+  --height-xl: 8rem;
   --height-full: 100dvh;
   /*Z-index=======================*/
   --z-index-header: 100;

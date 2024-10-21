@@ -15,20 +15,21 @@ section.testimonies .testimonies-content{
   margin: 0 auto;
 }
 section.testimonies .swiper-slide{
-  position: relative;
-  width: var(--width-full);
-  padding: var(--spacing-md);
-  border-radius: var(--radius-lg);
-  border: 1px solid var(--color-green-900);
+  position: relative !important;
+  width: var(--width-full) !important;
+  height: auto !important;
+  padding: var(--spacing-md) !important;
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid var(--color-green-900) !important;
 }
 section.testimonies .swiper-slide img {
-  border-radius: var(--radius-full);
-  position: absolute;
-  border: 2px solid var(--color-green-900);
-  top: -30%;
-  left: -20px;
-  width: 100px;
-  height: 100px;
+  border-radius: var(--radius-full) !important;
+  position: absolute !important;
+  border: 2px solid var(--color-green-900) !important;
+  top: -30% !important;
+  left: -20px !important;
+  width: 100px !important;
+  height: 100px !important;
 }
 section.testimonies .swiper-slide .testimony-content{
   margin-top: var(--spacing-2xl);
@@ -48,6 +49,9 @@ section.testimonies .swiper-slide i{
   border-radius: var(--radius-full);
 }
 @media screen and (max-width: 992px) {
+  section.testimonies .swiper-slide {
+    height: 200px !important;
+  }
   section.testimonies{
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);

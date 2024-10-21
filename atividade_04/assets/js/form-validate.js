@@ -1,52 +1,58 @@
 const formContact = document.getElementById("form-contact");
-const errorFormSpan = document.querySelectorAll("#form-contact span")
+const spanError = document.querySelectorAll("#form-contact span")
+
 
 formContact.addEventListener("submit", function(event) {
   event.preventDefault();
 
   clearErrors();
 
+  let isValid = true;
   const name = document.getElementById("name").value.trim();
   const email = document.getElementById("email").value.trim();
   const telephone = document.getElementById("telephone").value.trim();
   const message = document.getElementById("message").value.trim();
 
-  let isValid = true;
+  const templateParams = {
+    name: this.name.value,
+    email: this.email.value,
+    telephone: this.telephone.value,
+    message: this.message.value,
+  };
 
   if (name === "") {
-    displayError("nameError", "Por favor, insira seu nome.");
+    displayError("name-error", "Por favor, insira seu nome.");
     isValid = false;
   }
 
   // Validação do email
   if (email === "") {
-    displayError("emailError", "Por favor, insira seu email.");
+    displayError("email-error", "Por favor, insira seu email.");
     isValid = false;
   } else if (!validateEmail(email)) {
-    displayError("emailError", "Por favor, insira um email válido.");
+    displayError("email-error", "Por favor, insira um email válido.");
     isValid = false;
   }
 
   // Validação do telefone
   if (telephone === "") {
-    displayError("phoneError", "Por favor, insira seu telefone.");
+    displayError("phone-error", "Por favor, insira seu telefone.");
     isValid = false;
   } else if (!validatePhone(telephone)) {
-    displayError("phoneError", "Por favor, insira um telefone válido.");
+    displayError("phone-error", "Por favor, insira um telefone válido.");
     isValid = false;
   }
 
   // Validação da mensagem
   if (message === "") {
-    displayError("messageError", "Por favor, insira sua mensagem.");
+    displayError("message-error", "Por favor, insira sua mensagem.");
     isValid = false;
   }
 
   // Se o formulário for válido, pode enviar
   if (isValid) {
-    // Aqui você pode adicionar a lógica para enviar o formulário
-    alert("Formulário enviado com sucesso!");
-    // this.submit(); // Descomente esta linha para enviar o formulário
+    sendMail(templateParams)
+    clearInputs();
   }
 });
 
@@ -60,7 +66,7 @@ function validateEmail(email) {
 // Função para validar telefone (apenas números)
 function validatePhone(phone) {
   const re = /^\d{10,15}$/;
-  return re.test(telephone);
+  return re.test(phone);
 }
 
 // Funções para mostrar e limpar mensagens de erro
@@ -72,4 +78,34 @@ function displayError(elementId, message) {
 function clearErrors() {
   const errorElements = document.querySelectorAll(".error");
   errorElements.forEach(el => el.textContent = "");
+}
+
+function clearInputs(){
+  const inputs = document.querySelectorAll("form input");
+  const message = document.querySelector("form textarea");
+  inputs.forEach(input => input.value = "");
+  message.value = "";
+}
+
+function sendMail(templateParams){
+  emailjs.send('service_bpsj5kr', 'template_wosqcac', templateParams)
+    .then(function(response) {
+      Toastify({
+        text: "Mensagem enviada.",
+        className: "success",
+        style: {
+          background: "#20d147",
+        }
+      }).showToast();
+      return (response.status, response.text)
+
+    }, function(error) {
+      Toastify({
+        text: error,
+        className: "error",
+        style: {
+          background: "#d93025",
+        }
+      }).showToast();
+    });
 }

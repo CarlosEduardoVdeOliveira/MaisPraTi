@@ -49,12 +49,11 @@ section.contact .bg-mask form .group-input textarea {
   height: 96px;
   resize: none;
 }
-section.contact .bg-mask form .group-input span{
+.error{
   color: var(--color-red-500);
   font-size: var(--size-sm);
   font-weight: var(--font-weight-medium);
   margin-top: var(--spacing-xs);
-  visibility: hidden;
 }
 
 section.contact .bg-mask form button {
