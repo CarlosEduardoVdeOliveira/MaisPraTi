@@ -3,7 +3,7 @@ section.contact {
   width: 100%;
 }
 
-section.contact div {
+section.contact .bg-mask{
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -12,27 +12,30 @@ section.contact div {
   background-color: rgba(17, 156, 43, 0.393);
 }
 
-section.contact div h2 {
+section.contact .bg-mask h2 {
   margin-top: var(--spacing-4xl);
 }
 
-section.contact div form {
+section.contact .bg-mask form {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
 }
-
-section.contact div form label {
+section.contact .bg-mask form .group-input{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--spacing-md);
+}
+section.contact .bg-mask form .group-input label {
   color: var(--color-blue-900);
   margin-bottom: 5px;
   font-weight: var(--font-weight-medium);
 }
 
-section.contact div form input,
-section.contact div form textarea {
-  margin-bottom: 15px;
+section.contact .bg-mask form .group-input input,
+section.contact .bg-mask form .group-input textarea {
   border: 2px solid var(--color-blue-500);
   font-size: var(--size-md);
   font-weight: var(--font-weight-medium);
@@ -42,12 +45,19 @@ section.contact div form textarea {
   background-color: var(--color-green-50);
 }
 
-section.contact div form textarea {
+section.contact .bg-mask form .group-input textarea {
   height: 96px;
   resize: none;
 }
+section.contact .bg-mask form .group-input span{
+  color: var(--color-red-500);
+  font-size: var(--size-sm);
+  font-weight: var(--font-weight-medium);
+  margin-top: var(--spacing-xs);
+  visibility: hidden;
+}
 
-section.contact div form button {
+section.contact .bg-mask form button {
   background-color: var(--color-blue-500);
   color: var(--color-green-100);
   padding: var(--spacing-md) var(--spacing-sm);

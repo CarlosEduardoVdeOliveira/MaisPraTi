@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery-bundle.min.css">
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Pescaria Radical</title>
+    <title>Pescarias Radicais</title>
   </head>
   <body>
     <!-- Header -->
@@ -62,7 +62,7 @@
           </div>
           <div class="swiper-slide">
             <img
-              src="./assets/images/bg_contato.jpg"
+              src="./assets/images/mapuera-peixe-2.jpg"
               alt="Guia de pesca"
             />
           </div>
@@ -226,21 +226,29 @@
     </section>
     <!-- Seção Contato -->
     <section id="contact" class="contact">
-      <div>
+      <div class="bg-mask">
         <h2><i class="fa-solid fa-envelope"></i> Entre em contato e faça sua reserva</h2>
       <form id="form-contact">
-        <label  data-aos="fade-left" data-aos-duration="1500" for="name">Nome:</label>
-        <input  data-aos="fade-left" data-aos-duration="1500" type="text" id="name" name="name" required placeholder="Nome completo" />
-
-        <label  data-aos="fade-left" data-aos-duration="2000" for="email">Email:</label>
-        <input  data-aos="fade-left" data-aos-duration="2000" type="email" id="email" name="email" required placeholder="exemplo@email.com" />
-
-        <label  data-aos="fade-left" data-aos-duration="2500" for="telephone">Telefone:</label>
-        <input  data-aos="fade-left" data-aos-duration="2500" type="tel" id="telephone" name="telephone" required placeholder="99999999999" />
-
-        <label  data-aos="fade-left" data-aos-duration="3000" for="message">Mensagem:</label>
-        <textarea  data-aos="fade-left" data-aos-duration="3000" id="message" name="message" required  placeholder="Digite..."></textarea>
-
+        <div class="group-input">
+          <label  data-aos="fade-left" data-aos-duration="1500" for="name">Nome:</label>
+          <input  data-aos="fade-left" data-aos-duration="1500" type="text" id="name" name="name" required placeholder="Nome completo" />
+          <span>Preencha corretamente o campo.</span>
+        </div>
+        <div class="group-input">
+          <label  data-aos="fade-left" data-aos-duration="2000" for="email">Email:</label>
+          <input  data-aos="fade-left" data-aos-duration="2000" type="email" id="email" name="email" required placeholder="exemplo@email.com" />
+          <span>Preencha corretamente o campo.</span>
+        </div>
+        <div class="group-input">
+          <label  data-aos="fade-left" data-aos-duration="2500" for="telephone">Telefone:</label>
+          <input  data-aos="fade-left" data-aos-duration="2500" type="tel" id="telephone" name="telephone" required placeholder="99999999999" />
+          <span>Preencha corretamente o campo.</span>
+        </div>
+        <div class="group-input">
+          <label  data-aos="fade-left" data-aos-duration="3000" for="message">Mensagem:</label>
+          <textarea  data-aos="fade-left" data-aos-duration="3000" id="message" name="message" required  placeholder="Digite..."></textarea>
+          <span>Preencha corretamente o campo.</span>
+        </div>
         <button  data-aos="fade-left" data-aos-duration="3500" type="submit">Enviar</button>
       </form>
       </div>
@@ -260,6 +268,6 @@
     <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script src="./assets/js/script.js" type="module"></script>
+    <script src="./assets/js/script.js" defer type="module"></script>
   </body>
 </html>
