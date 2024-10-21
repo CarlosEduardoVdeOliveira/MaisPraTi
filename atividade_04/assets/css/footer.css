@@ -15,7 +15,7 @@ footer .redes-sociais a{
   color: var(--color-green-50);
   transition: var(--transition-slow);
 }
-footer .redes-sociais a:first-child{
+footer .redes-sociais a:not(a:last-child){
   margin-right: var(--spacing-md);
 }
 
