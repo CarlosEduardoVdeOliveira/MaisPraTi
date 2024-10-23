@@ -1,6 +1,6 @@
 section.contact {
   background: url("../images/bg_contato.jpg") no-repeat center/cover;
-  width: 100%;
+  width: auto;
 }
 
 section.contact .bg-mask{
