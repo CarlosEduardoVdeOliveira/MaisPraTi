@@ -11,7 +11,7 @@ header button.menu-hamburger:hover{
 }
 
 .menu-hamburger-container{
-  background-color: var(--color-blue-500);
+  background-color: var(--color-blue-700);
   position: absolute;
   display: flex;
   width: var(--width-xl);
