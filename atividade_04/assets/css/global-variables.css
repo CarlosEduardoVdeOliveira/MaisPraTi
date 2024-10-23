@@ -75,18 +75,18 @@
   --width-4xl: 128rem; /* 2048px Tamanho 4x extra grande */
   --width-full: 100%; /* Tamanho full*/ 
   /*Heights=====================*/
-  --height-xs: 1.5rem
+  --height-xs: 1.5rem;
   --height-sm: 2rem;
   --height-md: 4rem;
   --height-lg: 6rem;
   --height-xl: 8rem;
   --height-2xl: 15.625rem;
   --height-3xl: 18.75rem;
-  --height-full: 100dvh;
+  --height-full: 100%;
   /*Z-index=======================*/
-  --z-index-header: 100;
-  --z-index-modal: 1000;
-  --z-index-overlay: 2000;
+  --z-index-xs: 1;
+  --z-index-sm: 2;
+  --z-index-md: 3;
 
   /*transition animation=======================*/
   --transition-fast: all 0.2s ease-in-out;
