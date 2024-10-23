@@ -11,13 +11,13 @@
 @import url("./footer.css");
 
 html{
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
 overflow-x: hidden;
 }
 
 body {
   font-family: var(--font-lato);
-  overflow: hidden;
+  overflow-x: hidden;
 background: var(--color-blue-50);
 }
 
