@@ -7,6 +7,7 @@ section.about {
 width:100%;
 height: auto;
   gap: var(--spacing-md);
+overflow: hidden;
 }
 section.about .about-content{
   margin-top: var(--spacing-md);
