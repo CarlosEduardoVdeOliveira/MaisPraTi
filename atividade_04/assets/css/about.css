@@ -34,7 +34,7 @@ section.about .about-gallery .swiper-slide img{
   section.about{
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: auto;
     align-items: center;
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
