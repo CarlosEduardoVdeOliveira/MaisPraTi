@@ -16,7 +16,7 @@ header button.menu-hamburger:hover{
   display: flex;
   width: var(--width-xl);
   top: var(--width-lg);
-  height: auto;
+  height: 100dvh;
   border: 1px solid var(--color-blue-500);
   right: 0;
   border-top-left-radius: var(--radius-lg);
