@@ -4,7 +4,7 @@ section.about {
   align-items: flex-start;
   justify-content: center;
   padding: var(--spacing-4xl) var(--spacing-xl);
-width:100%
+width:100%;
 height: auto;
   gap: var(--spacing-md);
 }
