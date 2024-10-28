@@ -1,0 +1,72 @@
+div.card{
+   border: 1px solid var(--color-white);
+   border-radius: var(--radius-lg);
+   box-shadow: var(--shadow-lg);
+   padding: var(--spacing-md);
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-md);
+   letter-spacing: 1.5px;
+   width: 500px;
+}
+div.card:not(div.card:last-child){
+   margin-right: var(--spacing-md);
+}
+div.card h2{
+   font-size: var(--size-xl);
+   font-weight: var(--font-weight-semi-bold);
+}
+div.card ul{
+   display: flex;
+   flex-direction: column;
+   gap: var(--spacing-sm);
+}
+div.card ul li{
+   border: 1px solid transparent;
+   padding: var(--spacing-md);
+   border-radius: var(--radius-md);
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+div.card ul li:hover{
+   border: 1px solid var(--color-gray-400);
+}
+
+div.card ul li span{
+   font-weight: var(--font-weight-medium);
+}
+
+div.card ul li div.settings{
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   gap: var(--spacing-xs);
+}
+
+div.card ul li div.settings button.edit, 
+div.card ul li div.settings button.delete,
+div.card ul li div.settings button.drag-handle {
+   padding: var(--spacing-xs);
+   background-color: transparent;
+   border: none;
+   font-size: var(--size-md);
+   color: var(--color-white);
+   border-radius: var(--radius-md);
+   transition: var(--transition-slow);
+}
+div.card ul li div.settings button.edit:hover{
+   background-color: var(--color-yellow-500);
+}
+div.card ul li div.settings button.delete:hover{
+   background-color: var(--color-red-500);
+}
+div.card ul li div.settings button.drag-handle{
+   cursor: move;
+   font-size: var(--size-xl);
+   color: var(--color-gray-400);
+   justify-self: end;
+}
+div.card ul li div.settings button.drag-handle:hover{
+   color: var(--color-purple-500);
+}
