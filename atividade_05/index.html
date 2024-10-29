@@ -15,10 +15,10 @@
       <button><i class="fa-solid fa-plus"></i></button>
     </div>
     <section class="container">
-      <div class="card" id="todo">
+      <div class="card">
         <h2>TO-DO</h2>
-        <ul>
-          <li>
+        <ul class="card-content"  id="todo">
+          <li class="card-item" draggable="true">
             <span>Limpar casa</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
@@ -26,7 +26,7 @@
               <button class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></button>
             </div>
           </li>
-          <li>
+          <li class="card-item" draggable="true">
             <span>Estudar JS</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
@@ -34,7 +34,7 @@
               <button class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></button>
             </div>
           </li>
-          <li>
+          <li class="card-item" draggable="true">
             <span>Fazer atividade físicas</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
@@ -44,27 +44,27 @@
           </li>
         </ul>
       </div>
-      <div class="card" id="progress">
+      <div class="card">
         <h2>Em progresso...</h2>
-        <ul>
-          <li>
-            <span>Pescar <span class="loader"></span></span>
+        <ul class="card-content" id="progress">
+          <li class="card-item" draggable="true">
+            <span class="progress">Pescar</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
               <button class="delete"><i class="fa-solid fa-trash"></i></button>
               <button class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></button>
             </div>
           </li>
-          <li>
-            <span>Fazer almoço <span class="loader"></span></span>
+          <li class="card-item" draggable="true">
+            <span class="progress">Fazer almoço</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
               <button class="delete"><i class="fa-solid fa-trash"></i></button>
               <button class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></button>
             </div>
           </li>
-          <li>
-            <span>Tomar café <span class="loader"></span></span>
+          <li class="card-item" draggable="true">
+            <span class="progress">Tomar café</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
               <button class="delete"><i class="fa-solid fa-trash"></i></button>
@@ -73,10 +73,10 @@
           </li>
         </ul>
       </div>
-      <div class="card" id="done">
+      <div class="card">
         <h2>Finalizado</h2>
-        <ul>
-          <li>
+        <ul class="card-content" id="done">
+          <li class="card-item" draggable="true">
             <span class="done">Estudar html.</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
@@ -84,7 +84,7 @@
               <button class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></button>
             </div>
           </li>
-          <li>
+          <li class="card-item" draggable="true">
             <span class="done">Limpar a geladeira.</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>
@@ -92,7 +92,7 @@
               <button class="drag-handle"><i class="fa-solid fa-grip-vertical"></i></button>
             </div>
           </li>
-          <li>
+          <li class="card-item" draggable="true">
             <span class="done">Arrumar o quarto.</span>
             <div class="settings">
               <button class="edit"><i class="fa-solid fa-pen"></i></button>

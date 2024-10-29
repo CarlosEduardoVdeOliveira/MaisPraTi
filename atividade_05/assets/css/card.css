@@ -21,7 +21,7 @@ div.card ul{
    flex-direction: column;
    gap: var(--spacing-sm);
 }
-div.card ul li{
+div.card ul li.card-item{
    border: 1px solid transparent;
    padding: var(--spacing-md);
    border-radius: var(--radius-md);
@@ -29,24 +29,24 @@ div.card ul li{
    align-items: center;
    justify-content: space-between;
 }
-div.card ul li:hover{
+div.card ul li.card-item:hover{
    border: 1px solid var(--color-gray-400);
 }
 
-div.card ul li span{
+div.card ul li.card-item span{
    font-weight: var(--font-weight-medium);
 }
 
-div.card ul li div.settings{
+div.card ul li.card-item div.settings{
    display: flex;
    justify-items: center;
    align-items: center;
    gap: var(--spacing-xs);
 }
 
-div.card ul li div.settings button.edit, 
-div.card ul li div.settings button.delete,
-div.card ul li div.settings button.drag-handle {
+div.card ul li.card-item div.settings button.edit, 
+div.card ul li.card-item div.settings button.delete,
+div.card ul li.card-item div.settings button.drag-handle {
    padding: var(--spacing-xs);
    background-color: transparent;
    border: none;
@@ -55,20 +55,27 @@ div.card ul li div.settings button.drag-handle {
    border-radius: var(--radius-md);
    transition: var(--transition-slow);
 }
-div.card ul li div.settings button.edit:hover{
+div.card ul li.card-item div.settings button.edit:hover{
    background-color: var(--color-yellow-500);
 }
-div.card ul li div.settings button.delete:hover{
+div.card ul li.card-item div.settings button.delete:hover{
    background-color: var(--color-red-500);
 }
-div.card ul li div.settings button.drag-handle{
+div.card ul li.card-item div.settings button.drag-handle{
    cursor: move;
    font-size: var(--size-xl);
    color: var(--color-gray-400);
    justify-self: end;
 }
-div.card ul li div.settings button.drag-handle:hover{
+div.card ul li.card-item div.settings button.drag-handle:hover{
    color: var(--color-purple-500);
+}
+.dragging{
+   opacity: .7;
+}
+
+.progress{
+   color: var(--color-blue-500);
 }
 .done{
    text-decoration: line-through;
