@@ -70,3 +70,7 @@ div.card ul li div.settings button.drag-handle{
 div.card ul li div.settings button.drag-handle:hover{
    color: var(--color-purple-500);
 }
+.done{
+   text-decoration: line-through;
+   color: var(--color-green-500);
+}
