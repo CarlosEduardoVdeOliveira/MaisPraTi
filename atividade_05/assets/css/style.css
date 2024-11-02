@@ -5,10 +5,13 @@
 @import url("./group-input.css");
 @import url("./container.css");
 @import url("./card.css");
+@import url("./modal.css");
 @import url("./footer.css");
 
-html, body{
+html,
+body {
   font-family: var(--font-ubuntu);
   background: var(--color-gray-500);
   color: var(--color-white);
+  position: relative;
 }
