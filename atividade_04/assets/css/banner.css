@@ -1,14 +1,14 @@
 .banner {
-  width: 100%;
-  height: 100%;
+  width: var(--width-full);
+  height: 100dvh;
   padding: 0;
   position: relative;
 }
 
 
 .banner .swiper-container {
-  width: 100%;
-  height: 100vh;
+  width: var(--width-full);
+  height: var(--height-full);
   overflow: hidden;
 }
 .banner .swiper-slide{
@@ -16,15 +16,15 @@
 }
 
 .banner .swiper-slide img {
-  width: 100%;
-  height: 100%;
+  width: var(--width-full);
+  height: var(--height-full);
   object-fit: cover;
   object-position: center;
 }
 
 @media screen and (max-width: 500px) {
   .swiper-slide {
-    width: 100vw;
+    width: var(--width-full);
     height: auto;
   }
 }

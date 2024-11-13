@@ -1,4 +1,4 @@
-import "./aos.js"
+//import "./aos.js"
 import "./menuHamburger.js"
 import "./swiper.js"
 import "./testimony.js"

@@ -4,7 +4,10 @@ section.about {
   align-items: flex-start;
   justify-content: center;
   padding: var(--spacing-4xl) var(--spacing-xl);
+width:100%;
+height: auto;
   gap: var(--spacing-md);
+overflow: hidden;
 }
 section.about .about-content{
   margin-top: var(--spacing-md);
@@ -32,7 +35,7 @@ section.about .about-gallery .swiper-slide img{
   section.about{
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: auto;
     align-items: center;
     padding-left: var(--spacing-md);
     padding-right: var(--spacing-md);
