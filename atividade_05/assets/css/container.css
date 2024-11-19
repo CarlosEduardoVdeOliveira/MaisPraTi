@@ -1,7 +1,6 @@
 section.container{
    display: flex;
    align-items: flex-start;
-   flex-wrap: wrap;
    gap: var(--spacing-xl);
    justify-content: space-around;
    width: var(--width-full);

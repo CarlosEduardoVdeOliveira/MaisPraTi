@@ -19,12 +19,7 @@ div.card h2 {
 .title-tasks {
   color: var(--color-white);
 }
-.title-progress {
-  color: var(--color-blue-500);
-}
-.title-done {
-  color: var(--color-green-500);
-}
+
 div.card ul {
   display: flex;
   flex-direction: column;
@@ -45,6 +40,7 @@ div.card ul li.card-item:hover {
 
 div.card ul li.card-item span {
   font-weight: var(--font-weight-medium);
+  cursor: pointer;
 }
 
 div.card ul li.card-item div.settings {

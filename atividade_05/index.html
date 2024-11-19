@@ -7,15 +7,22 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Kanban | Tasks</title>
+    <title>Todo List</title>
   </head>
   <body>
-    <header><h1>Kanban Tasks</h1></header>
+    <header><h1>Todo List</h1></header>
     <main>
       <div class="group-input">
         <input type="text" id="task" placeholder="Digite sua tarefa..." />
-        <button><i class="fa-solid fa-plus"></i></button>
+        <button id="btn-register-task">
+          <i class="fa-solid fa-plus"></i>
+        </button>
       </div>
       <section class="container">
         <div class="card">
@@ -23,149 +30,30 @@
             <i class="fa-regular fa-rectangle-list"></i> Tarefas
           </h2>
           <ul class="card-content" id="todo">
-            <li class="card-item" draggable="true">
-              <span>Limpar casa</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-            <li class="card-item" draggable="true">
-              <span>Estudar JS</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-            <li class="card-item" draggable="true">
-              <span>Fazer atividade físicas</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2 class="title-progress">
-            <i class="fa-solid fa-clock-rotate-left"></i> Em progresso...
-          </h2>
-          <ul class="card-content" id="progress">
-            <li class="card-item" draggable="true">
-              <span class="progress">Pescar</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-            <li class="card-item" draggable="true">
-              <span class="progress">Fazer almoço</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-            <li class="card-item" draggable="true">
-              <span class="progress">Tomar café</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="card">
-          <h2 class="title-done">
-            <i class="fa-solid fa-circle-check"></i> Finalizado
-          </h2>
-          <ul class="card-content" id="done">
-            <li class="card-item" draggable="true">
-              <span class="done">Estudar html.</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-            <li class="card-item" draggable="true">
-              <span class="done">Limpar a geladeira.</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
-            <li class="card-item" draggable="true">
-              <span class="done">Arrumar o quarto.</span>
-              <div class="settings">
-                <button class="edit"><i class="fa-solid fa-pen"></i></button>
-                <button class="delete">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button class="drag-handle">
-                  <i class="fa-solid fa-grip-vertical"></i>
-                </button>
-              </div>
-            </li>
+            <!-- Listas de tarefas vem aqui -->
           </ul>
         </div>
       </section>
     </main>
-    <div class="container-modal">
+
+    <div class="container-modal-edit">
       <div class="modal">
         <h2 class="modal-title modal-title-edit">Editar</h2>
         <button class="btn-modal-close">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <input type="text" placeholder="Digite a tarefa..." />
+        <input type="text" id="input-edit" placeholder="Digite a tarefa..." />
         <div class="group-button-modal">
           <button class="btn-modal-cancel">
             Cancelar <i class="fa-solid fa-xmark"></i>
           </button>
-          <button class="btn-modal-save">
+          <button class="btn-modal-save" id="btn-save-edit">
             Salvar <i class="fa-solid fa-floppy-disk"></i>
           </button>
         </div>
       </div>
     </div>
+
     <footer>
       <p>&copy; Todos os direitos reservados.</p>
       <span>Carlos Eduardo</span>
@@ -188,7 +76,10 @@
         ></a>
       </div>
     </footer>
-    <script src="./assets/js/dragDrop.js"></script>
-    <script src="./assets/js/script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./assets/js/script.js" type="module"></script>
   </body>
 </html>

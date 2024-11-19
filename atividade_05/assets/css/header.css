@@ -1,7 +1,8 @@
-header{
-   background-color: var(--color-black);
-   padding: var(--spacing-md);
-   text-align: center;
-   font-size: var(--size-2xl);
-   font-weight: var(--font-weight-bold);
+header {
+  background-color: var(--color-black);
+  padding: var(--spacing-md);
+  text-align: center;
+  font-size: var(--size-2xl);
+  font-weight: var(--font-weight-bold);
+  width: var(--width-full);
 }

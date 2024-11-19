@@ -1,8 +1,10 @@
-main{
-   padding: var(--spacing-4xl) var(--spacing-md);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   gap: var(--spacing-3xl);
+main {
+  padding: var(--spacing-4xl) var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: var(--width-full);
+  gap: var(--spacing-3xl);
+  box-sizing: border-box;
 }

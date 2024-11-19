@@ -37,9 +37,9 @@
   --size-4xl: 4rem; /* (64px) (4xl)*/
 
   /*Width=======================*/
-  --width-xl: 1.5rem;
-  --width-3xl: 3rem;
-  --width-md: 50%;
+  --width-xs: 1.5rem;
+  --width-sm: 3rem;
+  --width-md: 31.25rem;
   --width-full: 100%;
 
   /*Height=======================*/
