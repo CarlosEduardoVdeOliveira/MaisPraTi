@@ -6,7 +6,7 @@ export function Home() {
       {actives.map((active) => {
         return (
           <Link
-            className="text-gray-600 self-center bg-gray-50 border-purple-500 cursor-pointer p-3 border rounded-lg hover:text-purple-500 hover:decoration-solid "
+            className="text-gray-50 text-center bg-gray-500 border-purple-500 cursor-pointer p-3 border rounded-lg hover:border-blue-300 hover:text-purple-500"
             to={`/${active.route}`}
             key={active.id}
           >

@@ -6,7 +6,7 @@ import { Link, useLocation } from "react-router-dom";
 export function Header() {
   const location = useLocation();
   return (
-    <header className="w-full p-4 mb-4 bg-gray-500 border-b border-purple-500">
+    <header className="w-full p-4 mb-4 bg-gray-600 border-b border-purple-500">
       {location.pathname !== "/" ? (
         <div className="w-full flex items-center justify-between">
           <div className="w-full">
