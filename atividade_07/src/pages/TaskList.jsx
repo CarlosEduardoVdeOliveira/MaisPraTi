@@ -1,22 +1,53 @@
 import { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import { Button } from "../components/Button";
 import { List } from "../components/List";
-import { Trash } from "lucide-react";
+import { Check, Trash } from "lucide-react";
 
 export function TaskList() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
-  const createTask = () => {
-    setTasks([...tasks, { description: newTask, id: Date.now() }]);
+
+  const showErrorToast = (msg) => {
+    toast.error(msg);
   };
+
+  const showSuccessToast = (msg) => {
+    toast.success(msg);
+  };
+
+  const createTask = () => {
+    if (newTask.trim() === "") {
+      showErrorToast("Preencha a tarefa!");
+      return;
+    }
+    setTasks((prevTasks) => [
+      ...prevTasks,
+      { description: newTask.trim(), id: Date.now(), completed: false },
+    ]);
+    showSuccessToast("Tarefa criada com sucesso!");
+    setNewTask("");
+  };
+
   const changeTask = (event) => {
     setNewTask(event.target.value);
   };
-  console.log(tasks);
-  const deleteTask = (id) => {
-    /* tasks.splice(id, 1); */
-    console.log(id.indexOf());
+
+  const changeCompleted = (id) => {
+    setTasks((prevTasks) =>
+      prevTasks.map((task) =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+      )
+    );
   };
+
+  const deleteTask = (id) => {
+    setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
+    showErrorToast("Tarefa excluída!");
+  };
+
   return (
     <div>
       <h2 className="text-2xl font-bold text-center mb-6">TO-DO | List</h2>
@@ -29,20 +60,33 @@ export function TaskList() {
         />
         <Button onClick={createTask}>Adicionar tarefa</Button>
         <ul className="mt-6">
-          {tasks.map((task) => {
-            return (
-              <List key={task.id}>
+          {tasks.map((task) => (
+            <List key={task.id}>
+              {task.completed ? (
+                <span className="text-[18px] text-green-600 line-through">
+                  {task.description}
+                </span>
+              ) : (
                 <span className="text-[18px]">{task.description}</span>
+              )}
+              <div className="flex gap-3">
                 <button
                   className="text-red-500 "
                   onClick={() => deleteTask(task.id)}
                 >
                   <Trash size={"18px"} />
                 </button>
-              </List>
-            );
-          })}
+                <button
+                  className="text-green-600"
+                  onClick={() => changeCompleted(task.id)}
+                >
+                  <Check size={"18px"} />
+                </button>
+              </div>
+            </List>
+          ))}
         </ul>
+        <ToastContainer />
       </div>
     </div>
   );
