@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Button } from "../components/Button";
 
 export function Counter() {
   const [counter, setCounter] = useState(0);
@@ -15,18 +16,8 @@ export function Counter() {
     <div className="flex gap-5 flex-col mx-0 my-auto">
       <h2 className="text-[32px] text-center text-gray-50">{counter}</h2>
       <div className="flex gap-4">
-        <button
-          className="hover:bg-gray-500 rounded-md p-2 border border-blue-300 bg-gray-600 text-gray-50"
-          onClick={handleIncrement}
-        >
-          Incrementar
-        </button>
-        <button
-          className="hover:bg-gray-500 rounded-md p-2 border border-blue-300 bg-gray-600 text-gray-50"
-          onClick={handleDecrement}
-        >
-          Decrementar
-        </button>
+        <Button onClick={handleIncrement}>Incrementar</Button>
+        <Button onClick={handleDecrement}>Decrementar</Button>
       </div>
     </div>
   );
