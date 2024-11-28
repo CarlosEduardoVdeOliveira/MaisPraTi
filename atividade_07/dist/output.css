@@ -554,6 +554,10 @@ video {
   display: none;
 }
 
+.relative {
+  position: relative;
+}
+
 .mx-0 {
   margin-left: 0px;
   margin-right: 0px;
@@ -576,12 +580,24 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
 
+.mt-11 {
+  margin-top: 2.75rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .flex {

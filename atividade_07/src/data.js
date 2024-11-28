@@ -10,3 +10,16 @@ export const actives = [
   { id: 9, name: "Timer com Intervalo e Alerta", route: "timeralert" },
   { id: 10, name: "Componentes com Tabs Navegáveis", route: "tabs" },
 ];
+export const peoples = [
+  { id: 1, name: "Linco", age: 33, email: "linco_na19@gmail.com" },
+  { id: 2, name: "Carlos", age: 33, email: "carlos@gmail.com" },
+  { id: 3, name: "Lis", age: 34, email: "lis_a1@gmail.com" },
+  { id: 4, name: "Luan", age: 24, email: "luans@hotmail.com" },
+  { id: 5, name: "Luíza", age: 65, email: "lu@gmail.com" },
+  { id: 6, name: "Luanna", age: 21, email: "lu32@hotmail.com" },
+  { id: 7, name: "Maria", age: 63, email: "ma@gmail.com" },
+  { id: 8, name: "Lucas", age: 43, email: "lucas2@hotmail.com" },
+  { id: 9, name: "João", age: 33, email: "joao@gmail.com" },
+  { id: 10, name: "Ana", age: 28, email: "ana@gmail.com" },
+  { id: 11, name: "Carlos Eduardo", age: 33, email: "carlos_edu@gmail.com" },
+];

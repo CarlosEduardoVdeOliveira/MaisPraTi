@@ -5,6 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Button } from "../components/Button";
 import { List } from "../components/List";
 import { Check, Trash } from "lucide-react";
+import Input from "../components/Input";
 
 export function TaskList() {
   const [tasks, setTasks] = useState([]);
@@ -51,14 +52,17 @@ export function TaskList() {
   return (
     <div>
       <h2 className="text-2xl font-bold text-center mb-6">TO-DO | List</h2>
-      <div>
-        <input
-          value={newTask}
-          className="text-gray-50 py-2 px-3 rounded-md outline-none border border-blue-200 mr-3 bg-gray-500"
-          onChange={(event) => changeTask(event)}
-          type="text"
-        />
-        <Button onClick={createTask}>Adicionar tarefa</Button>
+      <div className="flex flex-col">
+        <div className="flex w-full">
+          <Input
+            value={newTask}
+            className="text-gray-50 py-2 px-3 rounded-md outline-none border border-blue-200 mr-3 bg-gray-500"
+            onChange={(event) => changeTask(event)}
+            placeholder="Digite sua tarefa."
+            type="text"
+          />
+          <Button onClick={createTask}>Adicionar</Button>
+        </div>
         <ul className="mt-6">
           {tasks.map((task) => (
             <List key={task.id}>
