@@ -14,7 +14,8 @@ export function ListFilter() {
     search.length > 0
       ? peoples.filter(
           (people) =>
-            people.name.includes(search) || people.email.includes(search)
+            people.name.toLowerCase().includes(search.toLowerCase()) ||
+            people.email.toLowerCase().includes(search.toLowerCase())
         )
       : [];
   return (
