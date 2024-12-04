@@ -1,4 +1,4 @@
-import Input from "../components/Input";
+import { Input } from "../components/Input";
 import { List } from "../components/List";
 import { peoples } from "../data.js";
 import { useState } from "react";

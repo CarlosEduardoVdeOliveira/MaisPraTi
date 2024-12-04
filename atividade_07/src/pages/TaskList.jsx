@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { Button } from "../components/Button";
 import { List } from "../components/List";
 import { Check, Trash } from "lucide-react";
-import Input from "../components/Input";
+import { Input } from "../components/Input";
 
 export function TaskList() {
   const [tasks, setTasks] = useState([]);
