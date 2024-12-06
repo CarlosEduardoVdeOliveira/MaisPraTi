@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Button } from "../components/Button";
 import { Pause, Square, Play } from "lucide-react";
+import { Container } from "../components/Container";
 
 export function Timer() {
   const [hours, setHours] = useState(0);
@@ -40,7 +41,7 @@ export function Timer() {
   };
 
   return (
-    <div>
+    <Container>
       <div className="flex items-center justify-center gap-1 text-center mb-6 rounded-md p-2 border border-blue-300 bg-gray-600 text-gray-50">
         <div id="hours" className="text-xl font-bold">
           {hours.toString().padStart(2, "0")}
@@ -62,6 +63,6 @@ export function Timer() {
           <Square />
         </Button>
       </div>
-    </div>
+    </Container>
   );
 }

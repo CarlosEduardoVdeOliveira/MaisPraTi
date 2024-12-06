@@ -23,3 +23,31 @@ export const peoples = [
   { id: 10, name: "Ana", age: 28, email: "ana@gmail.com" },
   { id: 11, name: "Carlos Eduardo", age: 33, email: "carlos_edu@gmail.com" },
 ];
+
+export const images = [
+  {
+    id: 1,
+    url: "./src/assets/img_01.jpeg",
+    description: "Homem segurando um belo bagre.",
+  },
+  {
+    id: 2,
+    url: "./src/assets/img_02.png",
+    description: "Rio Amazonas, homem com belo exemplar de tucunaré amarelo.",
+  },
+  {
+    id: 3,
+    url: "./src/assets/img_03.png",
+    description: "Rio Parnaiba, mulher segurando um tucunaré branco.",
+  },
+  {
+    id: 4,
+    url: "./src/assets/img_04.png",
+    description: "Rio Amazonas, homens com um belo exemplar de tucunaré.",
+  },
+  {
+    id: 5,
+    url: "./src/assets/img_05.jpg",
+    description: "Belo exemplar de tucunaré",
+  },
+];

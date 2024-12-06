@@ -6,6 +6,7 @@ import { Button } from "../components/Button";
 import { List } from "../components/List";
 import { Check, Trash } from "lucide-react";
 import { Input } from "../components/Input";
+import { Container } from "../components/Container";
 
 export function TaskList() {
   const [tasks, setTasks] = useState([]);
@@ -50,7 +51,7 @@ export function TaskList() {
   };
 
   return (
-    <div>
+    <Container>
       <h2 className="text-2xl font-bold text-center mb-6">TO-DO | List</h2>
       <div className="flex flex-col">
         <div className="flex w-full">
@@ -92,6 +93,6 @@ export function TaskList() {
         </ul>
         <ToastContainer />
       </div>
-    </div>
+    </Container>
   );
 }

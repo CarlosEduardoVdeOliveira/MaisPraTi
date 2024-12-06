@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Button } from "../components/Button";
+import { Container } from "../components/Container";
 
 export function DataRequest() {
   const [posts, setPosts] = useState([]);
@@ -23,7 +24,7 @@ export function DataRequest() {
   return (
     <>
       {loadPosts ? (
-        <div className="w-full p-6 flex flex-col items-center justify-center">
+        <Container>
           <h2 className="font-bold text-4xl mb-8">Posts</h2>
           {snippet ? (
             <span>Carregando...</span>
@@ -40,11 +41,11 @@ export function DataRequest() {
               ))}
             </ul>
           )}
-        </div>
+        </Container>
       ) : (
-        <div className="w-full p-6 flex flex-col items-center justify-center">
+        <Container>
           <Button onClick={handleLoaderPosts}>Carregar posts</Button>
-        </div>
+        </Container>
       )}
     </>
   );

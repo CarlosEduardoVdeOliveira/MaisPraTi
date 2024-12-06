@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "../components/Button";
+import { Container } from "../components/Container";
 
 export function Counter() {
   const [counter, setCounter] = useState(0);
@@ -13,12 +14,12 @@ export function Counter() {
     setCounter(counter - 1);
   }
   return (
-    <div className="flex gap-5 flex-col mx-0 my-auto">
+    <Container>
       <h2 className="text-[32px] text-center text-gray-50">{counter}</h2>
       <div className="flex gap-4">
         <Button onClick={handleIncrement}>Incrementar</Button>
         <Button onClick={handleDecrement}>Decrementar</Button>
       </div>
-    </div>
+    </Container>
   );
 }

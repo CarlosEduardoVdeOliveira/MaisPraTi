@@ -4,6 +4,7 @@ import { Input } from "../components/Input";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { SquareArrowLeft } from "lucide-react";
+import { Container } from "../components/Container";
 
 export function Form() {
   const [name, setName] = useState("");
@@ -29,11 +30,14 @@ export function Form() {
   };
   const handleLogout = () => {
     setIsLogger(false);
+    setName("");
+    setEmail("");
+    setPassword("");
   };
   return (
     <>
       {isLogger ? (
-        <div className="w-full p-6 flex flex-col items-center justify-center">
+        <Container>
           <p className="flex gap-5">
             <span>
               Seja bem-vindo(a),{" "}
@@ -47,9 +51,9 @@ export function Form() {
               <SquareArrowLeft />
             </button>
           </p>
-        </div>
+        </Container>
       ) : (
-        <div className="w-full p-6 flex flex-col items-center justify-center">
+        <Container>
           <h2 className="text-2xl font-bold mb-6">Cadastro</h2>
           <form
             onSubmit={handleSubmit}
@@ -90,7 +94,7 @@ export function Form() {
             <Button>Cadastrar</Button>
           </form>
           <ToastContainer />
-        </div>
+        </Container>
       )}
     </>
   );

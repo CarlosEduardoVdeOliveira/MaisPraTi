@@ -1,3 +1,4 @@
+import { Container } from "../components/Container.jsx";
 import { Input } from "../components/Input";
 import { List } from "../components/List";
 import { peoples } from "../data.js";
@@ -19,7 +20,7 @@ export function ListFilter() {
         )
       : [];
   return (
-    <div>
+    <Container>
       <div className="flex mt-8">
         <Input
           value={search}
@@ -43,6 +44,6 @@ export function ListFilter() {
               </List>
             ))}
       </ul>
-    </div>
+    </Container>
   );
 }
