@@ -8,13 +8,19 @@ export function DataRequest() {
   const [snippet, setSnippet] = useState(false);
 
   useEffect(() => {
-    setSnippet(false);
+    // Este useEffect faz a requisição de dados para a API JSONPlaceholder.
+    // O estado `loadPosts` é usado como condição para decidir se a requisição será feita.
+
+    setSnippet(false); // Reseta o estado `snippet` para falso antes de carregar os posts.
+
     if (loadPosts) {
-      fetch("https://jsonplaceholder.typicode.com/posts?userId=1")
-        .then((request) => request.json())
-        .then((data) => setPosts(data));
+      // Se `loadPosts` for verdadeiro, inicia a requisição.
+      fetch("https://jsonplaceholder.typicode.com/posts?userId=1") // Faz uma chamada para obter posts do usuário com ID 1.
+        .then((request) => request.json()) // Converte a resposta da API para JSON.
+        .then((data) => setPosts(data)); // Atualiza o estado `posts` com os dados recebidos.
     }
   }, [loadPosts, snippet]);
+  // Este efeito será reexecutado quando `loadPosts` ou `snippet` mudar.
 
   const handleLoaderPosts = () => {
     setLoadPosts(true);

@@ -8,8 +8,12 @@ export function ColorChange() {
     setBgColor(generateColor());
   };
   useEffect(() => {
-    document.body.style.backgroundColor = bgColor;
+    // Este useEffect monitora as mudanças no estado `bgColor`
+    // e aplica a cor atual como cor de fundo (`backgroundColor`) do body do documento.
+
+    document.body.style.backgroundColor = bgColor; // Atualiza a cor de fundo do body.
   }, [bgColor]);
+  // Este efeito será reexecutado sempre que o estado `bgColor` mudar.
 
   return (
     <Container>

@@ -10,24 +10,34 @@ export function Timer() {
   const [isRunning, setIsRunning] = useState(false);
 
   useEffect(() => {
-    if (!isRunning) return;
+    // Este useEffect é responsável por iniciar um intervalo que atualiza o número de segundos
+    // a cada 1000ms (1 segundo) quando a variável `isRunning` está verdadeira.
+    // O intervalo incrementa o estado `seconds` em 1 a cada execução.
+    if (!isRunning) return; // Se `isRunning` for falso, o efeito não executa.
     const interval = setInterval(() => {
-      setSeconds((prev) => prev + 1);
+      setSeconds((prev) => prev + 1); // Incrementa o contador de segundos.
     }, 1000);
 
+    // Retorna uma função de limpeza que é executada quando o componente é desmontado
+    // ou `isRunning` muda para falso. Essa limpeza garante que o intervalo seja encerrado,
+    // evitando comportamento inesperado ou vazamentos de memória.
     return () => clearInterval(interval);
-  }, [isRunning]);
+  }, [isRunning]); // Este efeito depende de `isRunning`. Será reexecutado sempre que o valor de `isRunning` mudar.
 
   useEffect(() => {
+    // Este useEffect monitora as mudanças nos estados `seconds` e `minutes`.
+    // Quando `seconds` atinge 60, ele reseta os segundos para 0 e incrementa o estado `minutes` em 1.
     if (seconds === 60) {
-      setMinutes((prev) => prev + 1);
-      setSeconds(0);
+      setMinutes((prev) => prev + 1); // Incrementa o contador de minutos.
+      setSeconds(0); // Reseta os segundos.
     }
+
+    // Quando `minutes` atinge 60, ele reseta os minutos para 0 e incrementa o estado `hours` em 1.
     if (minutes === 60) {
-      setHours((prev) => prev + 1);
-      setMinutes(0);
+      setHours((prev) => prev + 1); // Incrementa o contador de horas.
+      setMinutes(0); // Reseta os minutos.
     }
-  }, [seconds, minutes]);
+  }, [seconds, minutes]); // Este efeito depende de `seconds` e `minutes`. Será executado toda vez que qualquer um desses valores mudar.
 
   const handleStart = () => {
     setIsRunning((prev) => !prev);

@@ -15,36 +15,51 @@ export function TimerAlert() {
   const changeSeconds = (event) => setSeconds(Number(event.target.value));
 
   useEffect(() => {
-    if (!isRunning) return;
+    // Este useEffect controla o intervalo que decrementa o valor de `seconds` a cada 1 segundo.
+    // Só entra em ação quando `isRunning` é verdadeiro.
+    if (!isRunning) return; // Se `isRunning` for falso, não executa nada.
 
     const interval = setInterval(() => {
-      setSeconds((prev) => prev - 1);
+      setSeconds((prev) => prev - 1); // Decrementa o valor de `seconds` a cada 1 segundo.
     }, 1000);
 
+    // Função de limpeza que garante o cancelamento do intervalo quando o componente é desmontado
+    // ou quando `isRunning` muda para falso, evitando execuções desnecessárias.
     return () => clearInterval(interval);
-  }, [isRunning]);
+  }, [isRunning]); // Este efeito é reexecutado sempre que `isRunning` mudar.
 
   useEffect(() => {
-    if (seconds < 0) {
-      if (minutes > 0 || hours > 0) return;
+    // Este useEffect gerencia as transições de tempo (segundos, minutos e horas)
+    // e lida com o comportamento ao término da contagem.
 
-      setIsRunning(false);
-      setSeconds(0);
-      alert("Fim da contagem...");
+    if (seconds < 0) {
+      // Se os segundos ficarem abaixo de 0 e não houver mais minutos ou horas restantes,
+      // significa que a contagem chegou ao fim.
+      if (minutes > 0 || hours > 0) return; // Aguarda ajuste pelos minutos ou horas restantes.
+
+      setIsRunning(false); // Para a contagem.
+      setSeconds(0); // Garante que `seconds` seja ajustado para 0.
+      alert("Fim da contagem..."); // Exibe uma mensagem de fim.
+
+      // Toca um som de alerta para notificar o usuário.
       const audio = new Audio(alertSound);
       audio.play();
     }
 
+    // Quando `seconds` chega a 0, mas ainda há minutos restantes, decrementa os minutos
+    // e redefine os segundos para 59.
     if (seconds === 0 && minutes > 0) {
-      setMinutes((prev) => prev - 1);
-      setSeconds(59);
+      setMinutes((prev) => prev - 1); // Decrementa os minutos.
+      setSeconds(59); // Reseta os segundos para 59.
     }
 
+    // Quando `minutes` chega a 0, mas ainda há horas restantes, decrementa as horas
+    // e redefine os minutos para 59.
     if (minutes === 0 && hours > 0) {
-      setHours((prev) => prev - 1);
-      setMinutes(59);
+      setHours((prev) => prev - 1); // Decrementa as horas.
+      setMinutes(59); // Reseta os minutos para 59.
     }
-  }, [hours, minutes, seconds]);
+  }, [hours, minutes, seconds]); // Este efeito é acionado sempre que `hours`, `minutes` ou `seconds` mudam.
 
   const handleInit = () => {
     if (hours === 0 && minutes === 0 && seconds === 0) {
