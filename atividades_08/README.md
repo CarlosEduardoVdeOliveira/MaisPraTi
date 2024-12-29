@@ -111,7 +111,7 @@ Saída: 6 palavras.
    cd atividades_08
    ```
 
-3. Execute o programa desejado no ambiente de sua escolha (ex.: Python, Java, C).
+3. Tecnologia utilizada <img align="center" alt="carlos-React" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg"> JAVA.
 
 ---
 
